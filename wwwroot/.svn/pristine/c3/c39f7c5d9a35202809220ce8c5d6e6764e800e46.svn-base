@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Sets up the base table for the calendar_plus module
+ */
+
+/**
+ * Implements hook_schema().
+ */
+/*
+function calendar_plus_schema() {
+  $schema = array();
+  return $schema;
+}
+*/

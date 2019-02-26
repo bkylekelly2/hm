@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the nmhrc event feature.
+ */
+
+include_once('nmhrc_event.features.inc');

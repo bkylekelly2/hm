@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the NHMRC Advisory Panel feature.
+ */
+
+include_once 'nhmrc_advisory_panel.features.inc';

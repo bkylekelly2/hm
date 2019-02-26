@@ -1,0 +1,7 @@
+name = NHMRC Feeds Tamper Plugins
+description = Custom plugins for Library Resource import
+dependencies[] = feeds
+dependencies[] = feeds_tamper
+dependencies[] = ctools
+package = nhmrc
+core = 7.x

@@ -1,0 +1,14 @@
+name = nhmrc dev
+description = Functionality for dev and stage. Keep this module disabled on production
+core = 7.x
+package = nhmrc
+version = 7.x-2.0
+project = nhmrc_dev
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[variable][] = reroute_email_address
+features[variable][] = reroute_email_enable
+features[variable][] = reroute_email_enable_message

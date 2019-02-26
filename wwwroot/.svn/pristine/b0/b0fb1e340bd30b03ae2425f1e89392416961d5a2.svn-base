@@ -1,0 +1,13 @@
+/*-----  Icon List Items  ------*/
+.icon-item-list(){
+  ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  li{
+    padding-left: 40px;
+    min-height: 33px;
+    margin-bottom: 20px;
+  }
+}

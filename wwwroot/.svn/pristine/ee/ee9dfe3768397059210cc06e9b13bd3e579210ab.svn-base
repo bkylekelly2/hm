@@ -1,0 +1,366 @@
+// Year Calendar Customization
+// Define colors
+@orange: #B34800;
+@lgreen: #6B7593;
+@dgreen: #1E6D7C;
+@scarlet: #9D2023;
+@gray: #893B69;
+@liblue: #0077B5;
+@dblue: #002D61;
+
+//Size of legend
+@legend-border: 16px;
+@legend-border-right: 1px; //This solution is for Mozilla T_T
+@detail-border: 27px;
+
+.page-calendar-year{
+	.responsive.calendar-calendar .month-view{
+		width: auto;
+		 float: none;
+		 margin-right: 0;
+	}
+	.calendar-calendar.responsive {
+	    width: 30%; float: left; margin-right: 10px;
+	    &:nth-child(3n+1) {
+	    	clear: left;
+	    }
+	}
+}
+
+.page-calendar {
+	.nav-tabs {
+		display:none;
+	}
+	.view-nmhrc-calendar {
+		.view-header {
+			.date-nav-wrapper {
+				.date-heading {
+					h3 {}
+				}
+				ul {
+					margin: 0 !important;
+					li {
+						a {
+							i {
+							}
+						}
+					}
+				}
+			}
+		}
+		.responsive-calendar {
+			ul.days {
+				li.calendar-day {
+					ul.todays-events {
+						li.days-events {
+							.event-info {
+								//display: inline;
+								margin-bottom: 4%;
+								.event-category {
+									> div {
+										vertical-align: middle;
+										border-radius: 3px;
+									}
+									> .integration-institute {
+										background-color: @lgreen;
+										padding-top: 6px;
+										padding-bottom: 6px;
+										padding-left: 18px;
+										padding-right: 12px;
+										background-image: url("/sites/all/themes/bootstrap_nhmrc/images/calendar/gear.png") !important;
+										background-position: center center;
+										background-repeat: no-repeat;
+										height:10px;
+										display: inline;
+										margin-right: 2%;
+									}
+									> .training {
+										background-color: @dgreen;
+										padding-top: 6px;
+										padding-bottom: 6px;
+										padding-left: 18px;
+										padding-right: 12px;
+										background-image: url("/sites/all/themes/bootstrap_nhmrc/images/calendar/point.png") !important;
+										background-position: center center;
+										background-repeat: no-repeat;
+										height:10px;
+										display: inline;
+										margin-right: 2%;
+									}
+									> .event {
+										border-left: @legend-border solid @gray;
+										border-right: @legend-border-right solid @gray;
+										height:10px;
+										display: inline;
+										margin-right: 2%;
+									}
+									> .webinar {
+										background-color: @orange;
+										padding-top: 16px;
+										padding-bottom: 16px;
+										padding-left: 18px;
+										padding-right: 12px;
+										background-image: url("/sites/all/themes/bootstrap_nhmrc/images/calendar/screen.png") !important;
+										background-position: center center;
+										background-repeat: no-repeat;
+										height:10px;
+										display: inline-block;
+										margin-right: 2%;
+									}
+									> .workshop {
+										background-color: @scarlet;
+										padding-top: 6px;
+										padding-bottom: 6px;
+										padding-left: 18px;
+										padding-right: 12px;
+										background-image: url("/sites/all/themes/bootstrap_nhmrc/images/calendar/people.png") !important;
+										background-position: center center;
+										background-repeat: no-repeat;
+										height:10px;
+										display: inline;
+										margin-right: 2%;
+									}
+									> .conference {
+										//border-left: @legend-border solid @liblue;
+										//border-right: @legend-border-right solid @liblue;
+										background-color: @liblue;
+										padding-top: 6px;
+										padding-bottom: 6px;
+										padding-left: 18px;
+										padding-right: 12px;
+										background-image: url("/sites/all/themes/bootstrap_nhmrc/images/calendar/desk.png") !important;
+										background-repeat: no-repeat;
+										background-position: center center;
+										display: inline;
+										margin-right: 2%;
+									}
+									> .all-other {
+										background-color: @dblue;
+										padding-top: 6px;
+										padding-bottom: 6px;
+										padding-left: 18px;
+										padding-right: 12px;
+										background-image: url("/sites/all/themes/bootstrap_nhmrc/images/calendar/star.png") !important;
+										background-position: center center;
+										background-repeat: no-repeat;
+										height:10px;
+										display: inline;
+										margin-right: 2%;
+									}
+								}
+								.event-title {
+									//display: inline-block;
+								}
+								.calendar-popover {
+									//position: static;
+									//display: inline-block;
+									.calendar-tooltip {
+										margin: 0;
+										padding: 0;
+										border: 0;
+										background-color: transparent;
+										i.glyphicon-exclamation-sign {
+											//background-image: url("http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/img/glyphicons-halflings.png");
+											//transform: translateY(15%);
+										}
+									}
+								}
+								> .integration-institute {
+									.popover {
+										.popover-title {
+											background-color: @lgreen;
+											color: #fff;
+										}
+									}
+								}
+								> .training {
+									.popover {
+										.popover-title {
+											background-color: @dgreen;
+											color: #fff;
+										}
+									}
+								}
+								> .event {
+									.popover {
+										.popover-title {
+											background-color: @gray;
+											color: #fff;
+										}
+									}
+								}
+								> .webinar {
+									.popover {
+										.popover-title {
+											background-color: @orange;
+											color: #fff;
+										}
+									}
+								}
+								> .workshop {
+									.popover {
+										.popover-title {
+											background-color: @scarlet;
+											color: #fff;
+										}
+									}
+								}
+								> .conference {
+									.popover {
+										.popover-title {
+											background-color: @liblue;
+											color: #fff;
+										}
+									}
+								}
+								> .all-other {
+									.popover {
+										.popover-title {
+											background-color: @dblue;
+											color: #fff;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.view-footer {
+			background-color: rgb(230,230,230);
+			padding: 1%;
+			overflow: auto;
+			text-align: center;
+			//font-size: 0.9em;
+			.col-sm-2 {
+				background-repeat: no-repeat;
+				background-position: 5% center;
+				border-radius: 3px;
+				color: #fff;
+				display: inline-block;
+				height:10px;
+				line-height: 2em;
+				margin-right: 1%;
+				min-height: 30px;
+				padding-left: 40px;
+				padding-right: 25px;
+				@media @medium-and-up{
+					width: auto;
+					margin-left: 15px;
+					padding-right:25px;
+					padding-left:40px;
+				}
+			}
+			.integration-institute {
+				background-color: @lgreen !important;
+				background-image: url("/sites/all/themes/bootstrap_nhmrc/images/calendar/gear.png");
+			}
+			.training {
+				background-color: @dgreen !important;
+				background-image: url("/sites/all/themes/bootstrap_nhmrc/images/calendar/point.png");
+			}
+			.event {
+				background-color: @gray !important;
+				height:10px;
+			}
+			.webinar {
+				background-color: @orange !important;
+				background-image: url("/sites/all/themes/bootstrap_nhmrc/images/calendar/screen.png");
+			}
+			.workshop {
+				background-color: @scarlet !important;
+				background-image: url("/sites/all/themes/bootstrap_nhmrc/images/calendar/people.png");
+			}
+			.conference {
+				background-color: @liblue !important;
+				background-image: url("/sites/all/themes/bootstrap_nhmrc/images/calendar/desk.png");
+			}
+			.all-other {
+				background-color: @dblue !important;
+				background-image: url("/sites/all/themes/bootstrap_nhmrc/images/calendar/star.png");
+
+			}
+			> div.col-sm-2:first-child {
+				//margin-left: 0;
+			}
+			> div.row2nd {
+				margin-top: 5px;
+			}
+		}
+	}
+}
+
+.node-type-event {
+	.main-container {
+		.row {
+			section {
+				> h1.page-header {
+					border-bottom: none;
+				}
+				> div {
+					vertical-align: middle;
+					border-radius: 3px;
+					font-size: 16px;
+					padding-top: 8px;
+				}
+				> h1 {
+					display: inline;
+				}
+			}
+		}
+	}
+}
+
+.view-nmhrc-calendar .date-nav-wrapper #date-prev.date-prev {
+	right: 105px;
+	padding-right: 5px;
+}
+
+.view-nmhrc-calendar .date-nav-wrapper #date-next.date-next {
+	padding-left: 5px;
+}
+
+.view-nmhrc-calendar .date-nav-wrapper #date-prev.date-prev,
+.view-nmhrc-calendar .date-nav-wrapper #date-next.date-next {
+	background: none !important;
+	border: 1px solid #DBDBDB;
+	z-index: unset;
+	a {
+		[class^="icon-"] {
+			background-image: url("http://getbootstrap.com/2.3.2/assets/img/glyphicons-halflings.png") !important;
+		}
+	}
+}
+
+.view-nmhrc-calendar .date-nav-wrapper #date-prev.date-prev:hover,
+.view-nmhrc-calendar .date-nav-wrapper #date-next.date-next:hover {
+	background-color: #dfdfdf !important;
+}
+
+@media (min-width: 768px) {
+	.page-calendar {
+		.view-nmhrc-calendar {
+			.view-header {
+				.date-nav-wrapper {
+					margin-top: -46px;
+					float: right;
+					max-width: 56%;
+					> .date-nav {
+						> .date-heading {
+							text-align: left;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.page-calendar-month {
+	div.breadcrumb {
+		span.last {
+			display:none;
+		}
+	}
+}

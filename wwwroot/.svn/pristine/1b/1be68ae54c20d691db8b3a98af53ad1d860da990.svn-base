@@ -1,0 +1,19 @@
+name = User revision
+description = Adds revision support for users.
+package = Other
+core = 7.x
+
+configure = admin/config/people/revisions
+files[] = views/user_revision.views.inc
+files[] = views/views_handler_field_user_revision.inc
+files[] = views/views_handler_field_user_revision_link_revert.inc
+files[] = views/views_handler_argument_user_vid.inc
+files[] = views/views_handler_field_user_revision_link_delete.inc
+files[] = user_revision.drush.inc
+
+; Information added by Drupal.org packaging script on 2017-02-07
+version = "7.x-1.7+22-dev"
+core = "7.x"
+project = "user_revision"
+datestamp = "1486481896"
+

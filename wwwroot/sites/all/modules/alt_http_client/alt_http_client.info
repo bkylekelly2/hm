@@ -1,0 +1,11 @@
+name = Alternative HTTP Client
+description = Provides a (more configurable) version of the default drupal_http_request client
+core = 7.x
+
+
+; Information added by Drupal.org packaging script on 2017-10-22
+version = "7.x-1.0"
+core = "7.x"
+project = "alt_http_client"
+datestamp = "1508693646"
+

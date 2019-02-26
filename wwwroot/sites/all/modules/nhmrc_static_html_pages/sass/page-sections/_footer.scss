@@ -1,0 +1,142 @@
+
+/*Footer Section*/
+
+footer {
+	position: relative;
+	background: #1b6270 url("https://www.healthymarriageandfamilies.org/sites/all/themes/bootstrap_nhmrc/images/pattern_diagonal.png") repeat scroll 0 0;
+	border-top: 30px solid #9d2023;
+	z-index: 1000;
+}
+
+.footer {
+	background: rgba(0, 0, 0, 0) url("https://www.healthymarriageandfamilies.org/sites/all/themes/bootstrap_nhmrc/images/footer-icon.png") no-repeat scroll right bottom;
+	border-top: medium none;
+	color: #ffffff;
+	margin-top: 0;
+	padding: 25px 0;
+}
+.footer a{
+	color: $white;
+}
+
+.footer-links .nav {
+	margin-bottom: 15px;
+}
+
+.footer-links-block {
+	margin-bottom: 30px;
+}
+
+.footer-link-head {
+	display: block;
+	color: $white;
+	font-size: 16px;
+	font-weight: 700;
+	height: auto;
+	margin-bottom: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: auto;
+	@media #{$x-small-only}{
+		margin-bottom: 5px;
+		margin-top: 10px;
+	}
+}
+
+.footer-link-head:hover,
+.footer-link-head:focus {
+	color: $white;
+	text-decoration: underline;
+}
+
+.nav-tabs {
+	border-bottom: none;
+	width: auto;
+
+	@media #{$small-and-down}{
+		margin-bottom: 10px;
+	}
+}
+
+.footer-links .nav-tabs > li {
+	margin-top: 10px;
+}
+
+.footer-links .nav-tabs > li > a {
+	font-size: 13px;
+	text-decoration: none;
+	color: #FFF;
+	text-align: left;
+	margin: 0px;
+	padding: 0px;
+	border: 0px none;
+	outline: 0px none;
+	font-weight: 300;
+	line-height: 1.3em;
+}
+
+.footer-links .nav-tabs > li > a:hover {
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.footer-links .nav-tabs > li > a:focus {
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.nav-stacked > li > a {
+	border: medium none;
+	color: #efefef;
+	text-decoration: none;
+}
+
+#block-boxes-our-social-media-pages {
+	border-bottom: 1px solid #207485;
+	border-top: 1px solid #207485;
+	margin: 20px 0;
+	padding: 20px 0;
+	a{
+		display: inline-block;
+		&:focus{
+			outline: 1px dotted $white;
+		}
+	}
+}
+
+#boxes-box-our_social_media_pages {
+	text-align: center;
+}
+
+#disclaimer {
+	font-size: 12px;
+	font-weight: 300;
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 10px;
+	text-align: left;
+}
+
+.accessibility-link a {
+	font-size: 12.5px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	&:hover, &:focus{
+		text-decoration: underline;
+	}
+}
+
+//  five column layout hack ///////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: 768px) {
+	div.col-sm-7.five-three {
+		width: 60% !important;
+	}
+	div.col-sm-5.five-two {
+		width: 40% !important;
+	}
+}
+@media (max-width: 767px) {
+	.footer, .footer .nav-tabs > li > a{
+		text-align: center;
+	}
+}

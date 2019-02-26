@@ -1,0 +1,221 @@
+// Print Styles
+html,
+html body.admin-menu,
+body{
+	margin: 0 !important;
+}
+
+body{
+	padding: 20px;
+}
+
+h2{
+	font-size: 21px;
+}
+
+a{
+	color: #1b6270 !important;
+}
+
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12{
+	width: 100% !important;
+	margin: 0 !important;
+}
+
+.topper,
+#skip-link,
+#search,
+.navbar,
+.view-footer .view-accordion,
+#block-menu-block-2,
+#block-menu-block-3,
+#block-menu-block-4,
+#block-menu-block-5,
+#block-menu-block-6,
+.context-block-region,
+.pane-mostpopular-1,
+.nav-tabs,
+.views-field-field-media-type-video,
+.date-nav-wrapper .pager,
+a[title=add_new_event],
+video,
+.pane-home-media
+{
+	display: none;
+	height: 0;
+}
+//Header
+header#navbar{
+	padding: 0;
+	min-height: 0;
+	height: auto;
+}
+
+.logo_wrapper {
+	content: url('/sites/all/themes/sbootstrap_nhmrc/images/logo-print.png') !important;
+	height: 61px;
+	width: 250px;
+}
+//Accordions
+.accordion-body {
+	display: block !important;
+	height: auto;
+}
+//Footer
+#footer_wrapper {
+	border-top: 2px solid #9d2023;
+}
+
+//Home Page
+.pane-home-calendar li, .pane-featured-documents li{
+	padding-left: 0;
+}
+.pane-slideshow {
+margin: 0;
+}
+
+//Event Archives Page
+.page-events-archive{
+	.view-archive-webinars .panel-col-first{
+		display: none;
+	}
+	 .views-row {
+		padding: 0;
+		border-bottom: 2px solid #1b6270;
+		margin-bottom: 20px;
+	}
+
+	.panel-2col .panel-col-last .inside {
+		margin: 0 0 20px 0;
+	}
+}
+
+//Calendar
+.responsive-calendar .weekdays {
+	display: none;
+}
+
+.responsive-calendar li {
+	height: auto !important;
+	width: 100%;
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+	padding: 10px;
+	margin-bottom: -1px;
+}
+
+.responsive-calendar li li {
+	padding: 0;
+}
+
+.responsive-calendar li .day, 
+.responsive-calendar li .month {
+	display: inline;
+}
+
+.responsive-calendar li.out_of_range {
+	display: none;
+}
+
+.responsive.calendar-calendar .month-view {
+	width: auto;
+	float: none;
+	clear: both;
+	margin-right: 0;
+}
+
+.date-nav-wrapper .pager {
+	padding-right: 10px !important;
+}
+
+.date-nav div.date-heading {
+padding: 0 10px;
+}
+
+.date-nav div.date-heading h3 {
+	font-size: 1em;
+	text-align: left;
+}
+.calendar-day a[href]:after,
+.carousel-inner a[href]:after{
+	display: none;
+}
+
+#footer_wrapper,
+.first-p {
+	display: none !important;
+
+	section#block-boxes-our-social-media-pages,
+	section#block-block-4
+	{		
+		display: none;
+	}
+}
+
+@page {
+  size: landscape;
+}
+
+h1.page-header,
+.logo_wrapper,
+#back-top span#button,
+span#link
+{
+	display: none;
+}
+/*** Start Certificate of Attendance Print ***/
+.page-node-476 {
+	margin: auto;
+	padding-bottom: 25px;
+	padding-top:25px;
+	vertical-align: middle;
+
+	h1.page-header {
+		margin-top:20px !important;
+		display: none;
+	}
+	.print-site_name, .print-breadcrumb, .print-hr {
+		display: none;
+	}
+img.nhmrc_cert_logo {
+		margin: 25px auto 5px;
+		background-color: transparent !important;
+		padding: 50px;
+		-webkit-print-color-adjust: exact;
+	}
+
+.cert_bottom{
+			display: table;
+		  height:auto;
+		  margin-top:5px;
+		  vertical-align:bottom;
+		  width:100%;
+		}
+	.div-cert-today {
+		float: left;
+		font-size: .9em;
+		//display: inline-table;
+		//vertical-align: middle;
+		//width: auto;
+	}
+	.div-cert-signature {
+		//display: inline-table;
+		//vertical-align: middle;
+		//width: auto;
+		float: right;
+	}
+
+
+}
+/*** End Certificate of Attendance Print ***/

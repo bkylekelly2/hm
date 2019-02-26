@@ -1,0 +1,109 @@
+.media-sub-heading{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color:#043246;
+}
+
+
+
+//media-animated
+.media-animated.media{
+    background: #EFEFEF;
+    position: relative;
+
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+        filter: none;
+    }
+    .media-heading{
+        font-size:1.8em;
+    }
+    .media-body{
+         padding: 20px;
+     }
+    & > .media-left {
+        overflow: hidden;
+        max-width: 220px;
+        margin-right: 0px;
+    }
+
+    img {
+        max-width: 100%;
+        vertical-align: top;
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: grayscale(20%);
+        filter: grayscale(20%);
+    }
+    @media @medium-and-up {
+        .icons {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            opacity: 0;
+            transform: translate(0px, -20px);
+            .icon-email {
+                background-image: url('../images/icon-mail.png');
+                height: 30px;
+                width: 46px;
+                background-position: 0 0;
+                margin-top: 12px;
+
+                &:hover {
+                    outline: thin dotted #fff;
+                    outline: 5px auto -webkit-focus-ring-color;
+                    outline-offset: -2px;
+                }
+
+            }
+            span.mailto {
+                display: none !important;
+            }
+        }
+        .for-small-icons{
+            display: none;
+        }
+    }
+}
+@media @medium-and-up{
+    .media-animated.media:hover,
+    .media-animated.media.focus{
+        .media-heading{
+            font-size: 2em;
+            background: @myred;
+            color: #fff;
+            margin: -20px -20px 0px -20px;
+            padding: 10px 20px;
+        }
+        .media-sub-heading{
+            //border-bottom:5px solid red;
+            background: @mygreen;
+            color: #fff;
+            margin: 0px -20px 10px -20px;
+            padding: 10px 20px;
+        }
+        img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-filter: none;
+            filter: none;
+        }
+
+        .icons{
+            opacity: 100;
+            transform: translate(0px, 0px);
+        }
+    }
+
+}
+
+@media @small-and-down{
+    .icons{
+        display: none;
+    }
+}

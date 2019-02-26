@@ -1,0 +1,13 @@
+name = nhmrc paragraphs content
+description = content for paragraphs
+core = 7.x
+package = nhmrc
+version = 7.x-1.0
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = nhmrc_paragraphs
+dependencies[] = strongarm
+dependencies[] = uuid_features
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[uuid_node][] = a433d00c-ef7c-43de-9382-fd9c90606f4d

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the nhmrc sc facets feature.
+ */
+
+include_once 'nhmrc_sc_facets.features.inc';

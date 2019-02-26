@@ -1,0 +1,182 @@
+.page-calendar-year .responsive.calendar-calendar .month-view {
+  width: auto;
+  float: none;
+  margin-right: 0;
+}
+.page-calendar-year .calendar-calendar.responsive {
+  width: 30%;
+  float: left;
+  margin-right: 10px;
+}
+.page-calendar-year .calendar-calendar.responsive:nth-child(3n+1) {
+  clear: left;
+}
+.page-calendar .nav-tabs {
+  display: none;
+}
+.page-calendar .view-nmhrc-calendar .view-header .date-nav-wrapper ul {
+  margin: 0 !important;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info .event-category > div {
+  vertical-align: middle;
+  border-radius: 3px;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info .event-category > .integration-institute {
+  border-left: 16px solid #6B7593;
+  border-right: 1px solid #6B7593;
+  height: 10px;
+  display: inline;
+  margin-right: 2%;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info .event-category > .training {
+  border-left: 16px solid #1E6D7C;
+  border-right: 1px solid #1E6D7C;
+  height: 10px;
+  display: inline;
+  margin-right: 2%;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info .event-category > .event {
+  border-left: 16px solid #893B69;
+  border-right: 1px solid #893B69;
+  height: 10px;
+  display: inline;
+  margin-right: 2%;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info .event-category > .webinar {
+  border-left: 16px solid #A36716;
+  border-right: 1px solid #A36716;
+  height: 10px;
+  display: inline;
+  margin-right: 2%;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info .event-category > .workshop {
+  border-left: 16px solid #9D2023;
+  border-right: 1px solid #9D2023;
+  height: 10px;
+  display: inline;
+  margin-right: 2%;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info .event-category > .all-other {
+  border-left: 16px solid #0077B5;
+  border-right: 1px solid #0077B5;
+  height: 10px;
+  display: inline;
+  margin-right: 2%;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info .calendar-popover .calendar-tooltip {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info .calendar-popover .calendar-tooltip i.icon-info-sign {
+  background-image: url("http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/img/glyphicons-halflings.png");
+  transform: translateY(15%);
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info > .integration-institute .popover .popover-title {
+  background-color: #6B7593;
+  color: #fff;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info > .training .popover .popover-title {
+  background-color: #1E6D7C;
+  color: #fff;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info > .event .popover .popover-title {
+  background-color: #893B69;
+  color: #fff;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info > .webinar .popover .popover-title {
+  background-color: #A36716;
+  color: #fff;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info > .workshop .popover .popover-title {
+  background-color: #9D2023;
+  color: #fff;
+}
+.page-calendar .view-nmhrc-calendar .responsive-calendar ul.days li.calendar-day ul.todays-events li.days-events .event-info > .all-other .popover .popover-title {
+  background-color: #0077B5;
+  color: #fff;
+}
+.page-calendar .view-nmhrc-calendar .view-footer {
+  background-color: #e6e6e6;
+  padding: 1%;
+  overflow: auto;
+  text-align: center;
+}
+.page-calendar .view-nmhrc-calendar .view-footer > .integration-institute {
+  border-left: 1px solid #6B7593 !important;
+  border-right: 1px solid #6B7593 !important;
+  background-color: #6B7593 !important;
+  height: 10px;
+}
+.page-calendar .view-nmhrc-calendar .view-footer > .training {
+  border-left: 1px solid #1E6D7C !important;
+  border-right: 1px solid #1E6D7C !important;
+  background-color: #1E6D7C !important;
+  height: 10px;
+  padding-right: 2%;
+}
+.page-calendar .view-nmhrc-calendar .view-footer > .event {
+  border-left: 1px solid #893B69 !important;
+  border-right: 1px solid #893B69 !important;
+  background-color: #893B69 !important;
+  height: 10px;
+  padding-right: 2%;
+}
+.page-calendar .view-nmhrc-calendar .view-footer > .webinar {
+  border-left: 1px solid #A36716 !important;
+  border-right: 1px solid #A36716 !important;
+  background-color: #A36716 !important;
+  height: 10px;
+  padding-right: 2%;
+}
+.page-calendar .view-nmhrc-calendar .view-footer > .workshop {
+  border-left: 1px solid #9D2023 !important;
+  border-right: 1px solid #9D2023 !important;
+  background-color: #9D2023 !important;
+  height: 10px;
+  padding-right: 2%;
+}
+.page-calendar .view-nmhrc-calendar .view-footer > .all-other {
+  border-left: 1px solid #0077B5 !important;
+  border-right: 1px solid #0077B5 !important;
+  background-color: #0077B5 !important;
+  height: 10px;
+  padding-right: 2%;
+}
+.page-calendar .view-nmhrc-calendar .view-footer > div.col-md-2 {
+  line-height: 2em;
+  border-radius: 3px;
+  color: #fff;
+  padding-right: 0 !important;
+}
+.view-nmhrc-calendar .date-nav-wrapper #date-prev.date-prev {
+  right: 105px;
+  padding-right: 5px;
+}
+.view-nmhrc-calendar .date-nav-wrapper #date-next.date-next {
+  padding-left: 5px;
+}
+.view-nmhrc-calendar .date-nav-wrapper #date-prev.date-prev,
+.view-nmhrc-calendar .date-nav-wrapper #date-next.date-next {
+  background: none !important;
+  border: 1px solid #DBDBDB;
+}
+.view-nmhrc-calendar .date-nav-wrapper #date-prev.date-prev a [class^="icon-"],
+.view-nmhrc-calendar .date-nav-wrapper #date-next.date-next a [class^="icon-"] {
+  background-image: url("http://getbootstrap.com/2.3.2/assets/img/glyphicons-halflings.png") !important;
+}
+.view-nmhrc-calendar .date-nav-wrapper #date-prev.date-prev:hover,
+.view-nmhrc-calendar .date-nav-wrapper #date-next.date-next:hover {
+  background-color: #dfdfdf !important;
+}
+@media (min-width: 768px) {
+  .page-calendar .view-nmhrc-calendar .view-header .date-nav-wrapper {
+    margin-top: -42px;
+    float: right;
+    max-width: 56%;
+  }
+  .page-calendar .view-nmhrc-calendar .view-header .date-nav-wrapper > .date-nav > .date-heading {
+    text-align: left;
+  }
+}

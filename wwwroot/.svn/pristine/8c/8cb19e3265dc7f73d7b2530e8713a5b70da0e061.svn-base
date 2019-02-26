@@ -1,0 +1,13 @@
+//Color-box modal Popups
+#cboxLoadedContent #block-webform-client-block-82{
+  header, footer{
+    display: none;
+  }
+  .form-radios {
+    padding-left: 3px;
+  }
+  h2{
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+}

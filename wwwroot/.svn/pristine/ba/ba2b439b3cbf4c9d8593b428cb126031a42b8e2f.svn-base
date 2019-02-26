@@ -1,0 +1,71 @@
+/** CSS style for Browser IE8 **/
+/** No support for media query **/
+
+/** General **/
+body {
+	padding-top: 0px !important;	/*remove extra space on top*/
+	}
+
+/*Slideshow*/
+.carousel-inner img{
+	width: 100%;
+}
+
+#user-login {
+	margin-left: 10px;	
+}
+		
+	
+/** Header **/	
+.sf-menu li {
+  z-index:999;
+}
+
+.sf-sub-indicator {
+	display: none !important; /*do not display little arrow on menu*/
+}
+
+/*New styles*/
+.row-fluid{
+	clear: both; /*clear Rows*/
+}
+/*header*/
+.navbar-inner{
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled=false); /*remove gradient*/
+}
+
+.block-superfish-1{
+	float: right;
+}
+
+/*main content
+Homepage*/
+.pane-home-calendar li, .pane-featured-documents li{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	padding-right: 0 !important;
+}
+.footer h2.block-title a{
+	font-size: 15px;
+}
+
+.form-search{
+	width: 300px;
+}
+
+.form-search .input-group .btn{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius:0; 
+    background:transparent;
+    border:none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+    background-image:url(../images/search_icon.png);
+    background-repeat:no-repeat;
+    margin-left: -30px;
+    z-index: 20;
+    position: relative;
+    outline: none;
+}

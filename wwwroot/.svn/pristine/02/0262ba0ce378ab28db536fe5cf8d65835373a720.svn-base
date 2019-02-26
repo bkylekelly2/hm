@@ -1,0 +1,113 @@
+// Media query variables.
+@x-small-only: 		~"(max-width: 480px)";
+
+@small-and-down:  	~"(max-width: 767px)";
+@small-only:  		~"(min-width: 480px) and (max-width: 767px)";
+@small-and-up: 		~"(min-width: 480px)";
+
+@medium-and-down: 	~"(max-width: 979px)";
+@medium-only: 		~"(min-width: 768px) and (max-width: 979px)";
+@medium-and-up: 	~"(min-width: 768px)";
+
+@large-and-down:  	~"(max-width: 1199px)";
+@large-only:  		~"(min-width: 980px) and (max-width: 1199px)";
+@large-and-up: 	~"(min-width: 980px)";
+
+@x-large-only:    	~"(min-width: 1200px)";
+
+//colors
+@mygreen: #1b6270;
+@mygreen-light: #7ea5ac;
+@myred: #9d2023;
+@myyellow: #d48721;//#FAA400
+@myblack: #000000;
+@mywhite: #ffffff;
+@mydarkgrey: #333333;
+@mylightgrey: #e3e3e3;
+@mydarkgreen: #1A545B;
+
+@primary:@mygreen;
+@primary-lighten:@mygreen-light;
+@accent:@mydarkgreen;
+@accent2:@myyellow;
+@borderbottom: @mylightgrey;
+
+//font
+@lato: 'Lato', sans-serif;
+
+@bodyFont: @lato;
+
+//media query helper classes
+@media @x-small-only		{.hide-for-x-small-only{display: none;}}
+
+@media @small-and-down		{.hide-for-small-and-down, .hide-for-small{display: none;}}
+@media @small-only			{.hide-for-small-only{display: none;}}
+@media @small-and-up		{.hide-for-small-and-up{display: none;}}
+
+@media @medium-and-down	{.hide-for-medium-and-down{display: none;}}
+@media @medium-only		{.hide-for-medium-only{display: none;}}
+@media @medium-and-up		{.hide-for-medium-and-up{display: none;}}
+
+@media @large-and-down		{.hide-for-large-and-down{display: none;}}
+@media @large-only			{.hide-for-large-only{display: none;}}
+@media @large-and-up		{.hide-for-large-and-up{display: none;}}
+
+@media @x-large-only		{.hide-for-x-large-only{display: none;}}
+
+// helper classes
+
+.flush-left {
+    margin-left: 0;
+}
+.flush-right {
+    margin-right: 0;
+}
+
+//Image in content area responsive
+.main-container img {
+    .img-responsive();
+}
+
+// Bootstrap library.
+// @import 'bootstrap.less';
+// @import 'responsive.less';
+
+// Base-theme overrides.
+@import 'overrides.less';
+
+// Paragraphs.
+@import 'paragraphs.less';
+
+// Theme specific.
+@import 'mixins.less';
+@import 'main.less';
+// Layouts
+// components
+@import 'components/icon-item-lists.less';
+@import 'components/button.less';
+@import 'components/twitter-feed.less';
+@import 'components/carousal.less';
+@import 'components/accordion.less';
+@import 'components/calendar.less';
+@import 'components/podcasts.less';
+@import 'components/add_this.less';
+@import 'components/modal.less';
+@import 'components/media-object.less';
+// Page Partials
+@import 'page_partials/header.less';
+@import 'page_partials/footer.less';
+@import 'page_partials/sidebar.less';
+// Pages
+@import 'pages/homepage.less';
+@import 'pages/maintenance_page.less';
+@import 'pages/library_page.less';
+@import 'pages/past_events_archive.less';
+@import 'pages/media_gallery.less';
+@import 'pages/admin_pages.less';
+@import 'pages/node_archived-webinars.less';
+@import 'pages/webforms.less';
+//@import 'pages/certificate.less';
+@import 'pages/advisory_panel.less';
+@import 'pages/resource_search_result.less';
+
+

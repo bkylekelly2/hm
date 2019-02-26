@@ -1,0 +1,28 @@
+
+// eight block ///////////////////////////////////////////////////////////////////////////
+.solid-strip {
+	background: url("../img/general/solid-red-pattern.png") repeat;
+	z-index: 1000;
+	position: relative;
+
+	.container{
+		background: url('../img/general/logo.png') 20% center no-repeat;
+	}
+
+	p {
+		font-size: 2.2em;
+		font-weight: 700;
+		color: #fff;
+		width: 100%;
+		margin: 40px 0 70px;
+		span {
+			font-weight: 300;
+		}
+
+		@media #{$small-and-down}{
+			font-size: 1.5em;
+		}
+
+	}
+
+}

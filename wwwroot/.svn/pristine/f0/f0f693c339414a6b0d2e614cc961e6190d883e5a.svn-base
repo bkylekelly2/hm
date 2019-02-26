@@ -1,0 +1,26 @@
+<?php
+/**
+ * @file
+ * Code for the nhmrc media feature.
+ */
+
+include_once 'nhmrc_media.features.inc';
+
+function nhmrc_media_js_alter(&$javascript) {
+  foreach($javascript['settings']['data'] as $k => $v) {
+    if(isset($v['mediaelement'])) {
+      foreach($v['mediaelement'] as $class => $options) {
+       $javascript['settings']['data'][$k]['mediaelement'][$class]['opts']['startLanguage'] = 'en';
+       $javascript['settings']['data'][$k]['mediaelement'][$class]['opts']['features'] = array('playpause','current','progress','duration','tracks','volume');
+      }
+    }
+  }
+}
+
+//temperarily Hide the "video" field on the media content type
+//Do not want to delete in case they change their mind again
+function nhmrc_media_form_alter(&$form, $form_state, $form_id) {
+    if ($form_id == 'media_node_form') {
+       $form['field_media_type_video']['#access'] = FALSE;
+    }
+}

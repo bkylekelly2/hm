@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the nhmrc_content_management feature.
+ */
+
+include_once 'nhmrc_content_management.features.inc';

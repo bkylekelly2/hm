@@ -1,0 +1,176 @@
+<?php
+/**
+ * Implementation of hook_form_alter()
+ */
+
+  function nhmrc_custom_functions_form_alter(&$form, $form_state, $form_id) {
+
+    //dpm ($form_id);
+    //dpm($form);
+
+    /*
+    *Certificate: inserts a 'generated' event ID to be used for certificate printing (this ID is passed on from SurveyMonkey and is used to collect information about the event (title, date, length, etc.)
+    */
+    if ($form_id == 'event_node_form') {
+
+
+      /* print '<pre>';s
+          print_r($form);
+          print '</pre>';
+      */
+
+      $lang_code = $form['language']['#value'];
+      if (empty($form['field_event_id'][$lang_code][0]['value']['#default_value'])) {
+        $form['field_event_id'][$lang_code][0]['value']['#default_value'] = time();
+      }
+    }
+    if ($form['#id'] == 'views-exposed-form-solr-library-search-page' ||
+        $form['#id'] == 'views-exposed-form-solr-library-search-page-2') {
+        $form['search_api_views_fulltext']['#attributes'] = array( 'placeholder' => t('Enter search terms'));
+    }
+    if ($form['#id'] == 'views-exposed-form-solr-library-search-page-1') {
+      $form['search_api_views_fulltext']['#attributes'] = array( 'placeholder' => t('Search the Site'));
+    }
+  }
+
+/* generates a page/form to collect user name then forward to certificate page */
+function nhmrc_custom_functions_menu() {
+  $items['certificate-form'] = array(
+    'title' => t('Certificate of Attendance'),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+    'page callback' => 'nhmrc_custom_functions_certificateform'
+  );
+  return $items;
+}
+
+function nhmrc_custom_functions_certificateform() {
+  $event_id = $_REQUEST['e'];
+
+  if (!empty($event_id)) {
+
+  $query = new EntityFieldQuery();
+  $result = $query->entityCondition('entity_type', 'node')
+                    ->entityCondition('bundle', 'event')
+                    ->propertyCondition('status', 1)
+                    ->fieldCondition('field_event_id', 'value', $event_id, '=')
+                    ->execute();
+
+
+  $nodes = $result['node'];
+  $keys = array_keys($nodes);
+  $eid = $keys[0];
+
+  $event_node = node_load($eid);
+
+  } else {
+    $out = '<h2 class="page-sub-title">Error</h2>';
+    $out .= '<p>Can\'t find a corresponding event/webinar. Please contact the site administrator to resolve this issue.</p>';
+
+    return $out;
+
+  }
+
+  if (isset($event_node) && $event_node == null) {
+    $out = '<h2 class="page-sub-title">Error</h2>';
+    $out .= '<p>Can\'t find a corresponding event/webinar. Please contact the site administrator to resolve this issue.</p>';
+
+    return $out;
+  }
+
+  $e_length = field_get_items('node', $event_node, 'field_event_length');
+  $e_length = $e_length[0]['value'];
+  $e_date = field_get_items('node', $event_node, 'field_date');
+  $e_date = $e_date[0]['value'];
+  $e_date = strtotime($e_date);
+  $e_date = date("F j, Y", $e_date);
+  $e_category = field_get_items('node', $event_node, 'field_category_of_event');
+  $e_category = $e_category[0]['value'];
+
+
+  $form = drupal_get_form('nhmrc_custom_functions_cform', $event_node);
+  $form = render($form);
+
+  $out = '<h2 class="page-sub-title">Congratulations!</h2>';
+
+  $out .= "<p><strong>Course Title:</strong> $event_node->title</p>";
+  $out .= "<p><strong>Held on:</strong> $e_date</p>";
+  $out .= "<p><strong>Course Length:</strong> $e_length</p> ";
+  $out .= "<p><strong>Category of Event:</strong> $e_category</p> ";
+  $out .= "<p>Please enter your name to be printed on the certificate of completion</p>";
+
+  $out .= $form;
+
+  return $out;
+}
+
+
+function nhmrc_custom_functions_cform($form, &$form_state, $event_node) {
+  $e_length = field_get_items('node', $event_node, 'field_event_length');
+  $e_length = $e_length[0]['value'];
+  $e_date = field_get_items('node', $event_node, 'field_date');
+  $e_date = $e_date[0]['value'];
+  $e_date = strtotime($e_date);
+  $e_date = date("F j, Y", $e_date);
+  $e_category = field_get_items('node', $event_node, 'field_category_of_event');
+  $e_category = $e_category[0]['value'];
+
+  $form['name'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Name'),
+    '#required' => TRUE,
+    '#description' => t('(e.g., John Doe)')
+  );
+  $form['course'] = array(
+    '#type' => 'hidden',
+    '#value' => t($event_node->title)
+  );
+  $form['length'] = array(
+    '#type' => 'hidden',
+    '#value' => t($e_length)
+  );
+  $form['category'] = array(
+    '#type' => 'hidden',
+    '#value' => t($e_category)
+  );
+  $form['date'] = array(
+    '#type' => 'hidden',
+    '#value' => t($e_date)
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit')
+  );
+  $form['#method'] = 'get';
+
+  $url = 'survey-completion-certificate';
+  $form['#action'] = url($url);
+
+  return $form;
+}
+
+/**
+ * Implements hook_facetapi_facet_info_alter.
+ */
+function nhmrc_custom_functions_facetapi_facet_info_alter(array &$facet_info, array $searcher_info) {
+
+  if ('search_api' == $searcher_info['adapter']) {
+    // Clone the taxonomy facet.
+    $facet_info['field_all_keywords_1'] = $facet_info['field_all_keywords'];
+    $facet_info['field_all_keywords_1']['label'] = 'NCEE Keywords';
+    $facet_info['field_all_keywords_1']['name'] = 'field_all_keywords_1';
+  }
+}
+
+/**
+ * Implements hook_fact_items_alter
+ */
+function nhmrc_custom_functions_facet_items_alter(&$build, &$settings) {
+  if ($settings->facet == "field_all_keywords_1") {
+    foreach($build as $key => $item) {
+      if (!$build[$key]['#active']) {
+        unset($build[$key]);
+      }
+    }
+  }
+}

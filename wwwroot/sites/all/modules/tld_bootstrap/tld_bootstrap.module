@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * Implementation of hook_views_api().
+ */
+function tld_bootstrap_views_api() {
+  return array('api' => 3.0);
+}
+
+/**
+ * Implementation of hook_theme().
+ */
+function tld_bootstrap_theme($existing, $type, $theme, $path) {
+  return array(
+    'tld_bootstrap_grid' => array(
+      'variables' => array(),
+      'template' => 'tld_bootstrap_grid',
+      'preprocess functions' => array('views_view_table'),
+    ),
+  );
+}
+
+/**
+ * Implementation of hook_preprocess_THEME().
+ */
+function tld_bootstrap_preprocess_tld_bootstrap_grid(&$vars) {
+  $settings = array();
+  $total_columns = $vars['options']['columns'];
+
+  $settings['item_enabled'] = $vars['options']['item_settings']['item_enabled'];
+  $settings['item_element'] = $vars['options']['item_settings']['item_element'];
+  $settings['item_width'] = $vars['options']['item_settings']['item_width'];
+
+  $settings['container_enabled'] = $vars['options']['container_settings']['container_enabled'];
+  $settings['container_element'] = $vars['options']['container_settings']['container_element'];
+  $settings['container_width'] = $vars['options']['container_settings']['container_width'];
+
+  $current_row = 1;
+  $current_column = 1;
+  $grouped = array();
+
+  foreach($vars['rows'] as $row) {
+    $grouped[$current_row][$current_column] = $row;
+
+    if($current_column < $total_columns) {
+      $current_column++;
+    }
+    else {
+      $current_row++;
+      $current_column = 1;
+    }
+  }
+  $vars['rows'] = $grouped;
+  $vars['views_bootstrap'] = $settings;
+}

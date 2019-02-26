@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the NHMRC Library Migration feature.
+ */
+
+include_once 'nhmrc_library_migration.features.inc';

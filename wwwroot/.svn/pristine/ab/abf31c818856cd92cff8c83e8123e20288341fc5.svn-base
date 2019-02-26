@@ -1,0 +1,105 @@
+/*** Start Certificate of Attendance ***/
+/*
+.page-certificate-form  form#nhmrc_cert_form {
+  margin-bottom: 40px;
+}
+.page-certificate-form  form#nhmrc_cert_form input {
+  margin-bottom: 15px;
+}
+.page-certificate-form  form#nhmrc_cert_form .cert_submit {
+  margin-top: 10px;
+}
+.page-survey-certificate .node {
+  border: solid 2px #6889A5;
+  height:695px;
+  margin:0.5em 0.25em;
+  width:900px;
+}
+.page-survey-certificate .node .content {
+  border: solid 1px #6889A5;
+  height:683px;
+  margin:5px;
+  width:888px;
+}
+div#nhmrc_certif {
+  text-align: center;
+   
+    border: solid 2px #6889A5;
+}
+div#nhmrc_certif img.nhmrc_cert_logo {
+  margin: 5px auto;
+  background-color: #1b6270
+
+}
+div#nhmrc_certif h1 {
+  font-size: 2.7em;
+  font-weight:500;
+  color: #fff;
+  background: #009B46;
+  margin:0.25em auto;
+  padding:0 0 0.25em 0;
+  width:60%;
+}
+div#nhmrc_certif p {
+  margin:0;
+}
+div#nhmrc_certif p.cert_length {
+  background: #ddd;
+  padding: 8px 0;
+  width: 60%;
+  margin:0.25em auto;
+  font-size: 1em;
+}
+div#nhmrc_certif p.cert_date {
+  font-size: 1em;
+}
+div#nhmrc_certif .cert-variable {
+  height:270px;
+}
+div#nhmrc_certif p.nhmrc_cert_name{
+  font-family: News Cycle,sans-serif;
+  font-size: 3.3em;
+  font-weight:500;
+  margin-top: -10px;
+  color: #009B46;
+}
+div#nhmrc_certif p.nhmrc_cert_course {
+  color: #585556;
+  font-size: 1.2em;
+  margin:10px auto;
+  width:95%;
+}
+div#nhmrc_certif .cert_bottom{
+	height:auto;
+	margin-top:5px;
+	vertical-align:bottom;
+	width:100%;
+}
+div#nhmrc_certif .div-cert-today {
+  font-size: 0.9em;
+  display: inline-block;
+  vertical-align: middle;
+  width:48%;
+}
+div#nhmrc_certif .div-cert-today span.cert_today {
+  display: block;
+  padding-left:20px;
+  text-align:left;
+}
+div#nhmrc_certif .div-cert-signature{
+  display: inline-block;
+  vertical-align: middle;
+  width:48%;
+}
+div#nhmrc_certif .div-cert-signature span{
+	display:block;
+	margin-bottom:5px;
+	margin-right:10px;
+	text-align:right;
+}
+div#nhmrc_certif .div-cert-signature img{
+	height:120px;
+	width:265px;
+}
+*/
+/*** End Certificate of Attendance ***/

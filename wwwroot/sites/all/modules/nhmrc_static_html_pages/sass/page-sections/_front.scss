@@ -1,0 +1,114 @@
+header {
+	background: url("../img/general/header-pattern.png");
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+	border-bottom: 1px solid #2C879B;
+}
+
+.logo-header {
+	margin: 8px 0;
+	height: 115px;
+	@media #{$small-and-down}{
+		margin: 5px auto;
+		height: 50px;
+	}
+}
+
+.front-page{
+	font-size: 1.6em;
+	h2{
+		position: absolute;
+		width: 25%;
+		font-weight: 700;
+		top: 271px;
+		color: $white;
+		span{
+			display: block;
+			@media #{$medium-and-down}{
+				display: inline;
+			}
+		}
+		@media #{$small-and-down}{
+			top: 155px;
+		}
+		@media #{$small-only} and (orientation: portrait){
+			top: 271px;
+		}
+	}
+	h3{
+		position: absolute;
+		color: $white;
+		top: 175px; //145
+		width: 50%;
+		font-size: .9em;
+		span{
+			display: block;
+			margin-bottom: 20px;
+			@media #{$medium-and-down}{
+				margin-bottom: 10px;
+			}
+		}
+		@media #{$small-and-down}{
+			font-size: 1.1em; //adjusts all fonts sizes for phone
+			top: 75px;
+		}
+		@media #{$medium-and-down} and (orientation: portrait){
+			width: 100%; //adjusts all fonts sizes for phone
+
+		}
+	}
+	@media #{$medium-only} and (orientation: landscape){
+		font-size: 1.5em; //adjusts all fonts sizes for phone
+	}
+	@media #{$small-and-down}{
+		font-size: 12px; //adjusts all fonts sizes for phone
+	}
+	@media #{$small-only} and (orientation: portrait){
+		font-size: 1.4em; //adjusts all fonts sizes for phone
+	}
+	@media #{$x-small-only}{
+		font-size: 11px; //adjusts all fonts sizes for phone
+	}
+	.next-arrow{
+//		border: 2px solid lighten($green, 25%);
+//		&:hover, &:focus{
+//			border: 2px solid $white;
+//		}
+		&:focus{
+			outline: 1px dotted $grey-dark;
+		}
+	}
+}
+
+.intro {
+	background-image: url("../img/background/intro-bg.jpg");
+	z-index: 990;
+	@media #{$medium-and-down} {
+		background-position-x: 60%;
+	}
+	@media #{$small-and-down} {
+		background-position-x: 29%;
+	}
+}
+
+
+.family {
+	position: absolute;
+	height: 90vh;
+	bottom: 0%;
+	right: 10%;
+	z-index: 100;
+
+	@media #{$medium-and-down} and (orientation: portrait){
+		height: 60vh;
+	}
+
+	@media (orientation: portrait){
+		right: 0%;
+	}
+	@media #{$medium-and-down} and (orientation: landscape){
+		right: 5%;
+	}
+}
+

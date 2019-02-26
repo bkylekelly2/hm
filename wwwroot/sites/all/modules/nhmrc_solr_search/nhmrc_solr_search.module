@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the nhmrc solr search feature.
+ */
+
+include_once 'nhmrc_solr_search.features.inc';

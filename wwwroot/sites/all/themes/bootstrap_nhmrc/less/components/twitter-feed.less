@@ -1,0 +1,80 @@
+//twitter feed
+.view-id-twitter_feed{
+    .icon-item-list();
+
+    clear: both;
+
+    li{
+        background: url('//pbs.twimg.com/profile_images/519946724484206592/63yyQ4uo_normal.jpeg') no-repeat;
+        background-position: -1px 5px;
+        overflow: hidden;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+    .tweet-author-info{
+        float: left;
+        max-width: 70%;
+        line-height: 1em;
+        margin-bottom: 11px;
+        .front &{
+            margin-bottom: 5px;
+        }
+        .name{
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            color: @textColor;
+            white-space:nowrap;
+        }
+        .handle{white-space:nowrap;}
+    }
+
+
+    .tweet-time {
+        float: right;
+        line-height: 1em;
+    }
+
+    .tweet-time a, .handle{
+        font-size: .8em;
+        color: #797676;
+    }
+
+    .tweet-text{clear: both;}
+
+    .tweet-actions{
+        float: right;
+        span:nth-child(1) {
+            a {
+                color: transparent;
+                background: url("/sites/all/themes/bootstrap_nhmrc/images/twitter-reply.png") 0px 0px no-repeat;
+            }
+        }
+        span:nth-child(2) {
+            a {
+                color: transparent;
+                background: url("/sites/all/themes/bootstrap_nhmrc/images/twitter-retweet.png") 18px 0px no-repeat;
+            }
+        }
+        span:nth-child(3) {
+            a {
+                color: transparent;
+                background: url("/sites/all/themes/bootstrap_nhmrc/images/twitter-like.png") 15px 0px no-repeat;
+            }
+        }
+    }
+
+    .views-row{clear: both;}
+
+    .views-row{
+        .tweet-actions a{
+            position: relative;
+            top: -5px;
+            opacity:0;
+              .transition(all 0.3s ease);
+        }
+        &:hover .tweet-actions a{opacity:100;top: 0px;position: relative;}
+        .tweet-actions a:focus {opacity:100;top: 0px;position: relative;}
+
+    }

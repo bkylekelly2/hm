@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the nhmrc paragraphs content feature.
+ */
+
+include_once 'nhmrc_paragraphs_content.features.inc';

@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap_nhmrc",
+  "version": "1.0.0",
+  "description": "<!-- @file Instructions for subtheming using the Less Starterkit. --> <!-- @defgroup subtheme_less --> <!-- @ingroup subtheme --> # Less Starterkit",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.1.11",
+    "gulp": "^3.9.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-less": "^3.5.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-uglify": "^3.0.1",
+    "minimatch": "^3.0.2",
+    "npm": "^6.3.0"
+  }
+}

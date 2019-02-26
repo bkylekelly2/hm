@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the nhmrc special collection feature.
+ */
+
+include_once 'nhmrc_special_collection.features.inc';

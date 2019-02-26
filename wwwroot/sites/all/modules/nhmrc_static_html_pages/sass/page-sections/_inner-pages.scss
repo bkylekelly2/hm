@@ -1,0 +1,364 @@
+.inner-page{
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		@include background-image(linear-gradient($white 0%, $white 30%, transparent));
+		//		TODO: Remove background shadow from background images
+		@include opacity(0.6);
+	}
+
+	&.dark-background:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		@include background-image(linear-gradient($black 0%, $black 30%, transparent));
+		@include opacity(0.6);
+	}
+
+	.container{
+		position: relative;
+		height: 100vh;
+	}
+
+	h2{
+		@media #{$large-and-up}{
+			margin-top: 45px;
+		}
+	}
+	h3{
+		width: 35%;
+		@media #{$large-and-up}{
+			margin-top: 10px;
+		}
+		@media #{$small-and-down}{
+			margin-top: 0;
+		}
+		@media #{$small-and-down}, (orientation: portrait){
+			width: 90%;
+		}
+		@media #{$medium-and-small} and (orientation: portrait){
+			font-size: 2.3em;
+		}
+		@media #{$taller-phones} and (orientation: portrait){
+			margin-top: 10px;
+			font-size: 1.5em;
+			line-height: 1.3em;
+		}
+	}
+
+	@media #{$small-and-down}{
+		font-size: 10px; //adjusts all fonts sizes for phone
+	}
+}
+
+// Children and Youth
+.children-and-youth {
+	background-image: url("../img/background/children-youth-bg.jpg");
+	@media #{$medium-and-down} {
+		background-position-x: 50%;
+	}
+	@media #{$small-and-down} {
+		background-position-x: 32%;
+	}
+}
+
+.main-img{
+	position: absolute;
+	bottom: 0%;
+	right: 8%;
+	z-index: 100;
+	@media (orientation: portrait){
+		right: 0%;
+	}
+	@media #{$medium-and-down} and (orientation: landscape){
+		right: 5%;
+	}
+}
+.youth {
+	@include main-image-size($width:560px, $height:660px);
+}
+
+.drawing {
+	@include item-size($width:146px);
+	@include absolute(null,null,38%,32%);
+	@media #{$medium-and-down} and (orientation: landscape){
+		@include absolute(null,null,50%,39%);
+
+	}
+	@media #{$medium-and-down} and (orientation: portrait){
+		@include absolute(null,null,50%,20%);
+
+	}
+	@media #{$small-and-down} and (orientation: portrait){
+		bottom: 53%;
+	}
+	@media #{$small-and-down} and (orientation: landscape){
+		left: 39%;
+		bottom: 36%;
+	}
+	.plus-icon{
+		@include absolute(7%,null,null,-9%);
+	}
+}
+
+.ipad {
+	@include item-size($width:211px);
+	@include absolute(null,null,0%,3%);
+	.plus-icon{
+		@include absolute(null,-3%,30%);
+	}
+}
+
+.purse {
+	@include item-size($width:136px);
+	@include absolute(null,null,45%,15%);
+
+	@media #{$medium-and-down}{
+		@include absolute(null,null,35%,5%);
+	}
+	@media #{$medium-only} and (orientation: landscape){
+		@include absolute(null,null,21%,33%);
+	}
+
+	@media #{$small-and-down} and (orientation: landscape){
+		@include absolute(null,null,12%,29%);
+	}
+	.plus-icon{
+		@include absolute(20%,10%);
+	}
+}
+
+
+// Economic Self Sufficiency
+.economic-self-sufficiency {
+	background-image: url("../img/background/economic-self-bg.jpg");
+}
+
+.economic {
+	@include main-image-size($width:452px, $height:588px);
+}
+
+.mac {
+	@include item-size($width:305px);
+	@include absolute(null,null,17%,8%);
+
+	@media (orientation: portrait){
+		@include absolute(null,null,36%,5%);
+	}
+
+	.plus-icon{
+		@include absolute(null,7%,60%);
+	}
+}
+
+.on-phone {
+	//this is just a plus sign that shows over woman holding iphone
+	@include absolute(47%,null,null,4%);
+	z-index: 100;
+}
+
+.on-background-screen {
+	//this is just a plus sign that shows over the background
+	@include absolute(null,null,58%,37%);
+
+
+	@media (orientation: portrait){
+		@include absolute(null,null,62%,45%);
+	}
+
+	@media #{$x-small-only}, #{$medium-and-down} and (orientation: landscape){
+		@include absolute(null,null,42%,48%);
+	}
+}
+
+// Health and Mental Health
+.health-and-mental-health {
+	background-image: url("../img/background/health-mental-bg.jpg");
+}
+
+.health {
+	@include main-image-size($width:400px, $height:625px);
+}
+
+.tip {
+	@include item-size($width:155px);
+	@include absolute(null,null,0%,0%);
+
+	@media #{$small-and-down}{
+		@include absolute(null,null,0%,8%);
+	}
+
+	.plus-icon{
+		@include absolute(null,7%,38%);
+	}
+}
+
+.car-seat {
+	@include item-size($width:218px);
+	@include absolute(null,null,14%,31%);
+
+	@media #{$medium-only} and (orientation: portrait){
+		@include absolute(null,null,31%,20%);
+	}
+
+	@media #{$small-and-down} and (orientation: landscape){
+		@include absolute(null,null,14%,40%);
+	}
+	@media #{$taller-phones} and (orientation: portrait){
+		@include absolute(null,null,25%,22%);
+	}
+
+		.plus-icon{
+		@include absolute(8%,16%);
+	}
+}
+
+.tissue {
+	@include item-size($width:134px);
+	@include absolute(null,null,36%,19%);
+
+	@media #{$medium-and-small} and (orientation: portrait){
+		@include absolute(null,null,56%,9%);
+	}
+	@media #{$small-and-down} and (orientation: landscape){
+		@include absolute(null,null,32%,25%);
+	}
+	@media #{$taller-phones} and (orientation: portrait){
+		@include absolute(null,null,45%,5%);
+	}
+
+		.plus-icon{
+		@include absolute(null,11%,7%);
+	}
+}
+
+// Family Safety
+.family-safety {
+	background-image: url("../img/background/family-safety-bg.jpg");
+}
+
+.dark-background{
+	h2, h3 {
+		color: $white;
+	}
+}
+
+.lawyer {
+	@include main-image-size($width:316px, $height:595px);
+}
+
+.bear {
+	@include item-size($width:211px);
+	@include absolute(null,null,7%,0%);
+
+	@media (orientation: portrait){
+		@include absolute(null,null,37%,30%);
+	}
+	.plus-icon{
+		@include absolute(null,7%,36%);
+	}
+
+}
+
+.laptop {
+	@include item-size($width:190px);
+	@include absolute(null,null,32%,40%);
+
+	@media (orientation: portrait){
+		@include absolute(null,null,30%,4%);
+	}
+
+	@media #{$x-small-only} and (orientation: landscape){
+		@include absolute(null,null,20%,53%);
+	}
+
+	.plus-icon{
+		@include absolute(8%,29%);
+	}
+}
+
+.case {
+	@include item-size($width:211px);
+	@include absolute(null,null,11%,20%);
+
+	@media (orientation: portrait){
+		@include absolute(null,null,8%,23%);
+	}
+
+	@media #{$x-small-only} and (orientation: landscape){
+		@include absolute(null,null,7%,25%);
+	}
+
+	.plus-icon{
+		@include absolute(null,null,27%,10%);
+	}
+}
+
+// Cultural & Special Circumstances
+.cultural-and-special-circumstances {
+	background-image: url("../img/background/cultural-special-bg.jpg");
+}
+
+.kids {
+	@include main-image-size($width:366px, $height:521px);
+}
+
+.balloon {
+	@include item-size($width:112px);
+	@include absolute(null,null,30%,45%);
+
+	@media (orientation: portrait){
+		@include absolute(null,null,20%,35%);
+	}
+	@media #{$medium-and-down} and (orientation: landscape){
+		@include absolute(null,null,20%,45%);
+	}
+	@media #{$small-and-down} and (orientation: landscape){
+		@include absolute(null,null,3%,45%);
+	}
+	@media #{$taller-phones} and (orientation: portrait){
+		@include absolute(null,null,35%,35%);
+	}
+	.plus-icon{
+		@include absolute(34%,null,null,8%);
+	}
+}
+
+.board {
+	@include item-size($width:286px);
+	@include absolute(null, null, 0%, 0%);
+
+
+	@media #{$x-small-only} and (orientation: landscape) {
+		@include absolute(null, null, -5%, 0%);
+	}
+	.plus-icon{
+		@include absolute(30%,3%);
+	}
+}
+
+
+.ball {
+	@include item-size($width:140px);
+	@include absolute(null,null,10%,30%);
+
+	@media (orientation: portrait){
+		@include absolute(null,null,40%,10%);
+	}
+	@media #{$taller-phones} and (orientation: portrait){
+		@include absolute(null,null,35%,10%);
+	}
+
+	.plus-icon{
+		@include absolute(10%,10%);
+	}
+
+
+}

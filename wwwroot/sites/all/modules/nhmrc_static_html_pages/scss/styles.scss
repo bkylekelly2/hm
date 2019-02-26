@@ -1,0 +1,93 @@
+@import "bourbon";
+
+@import url("http://fonts.googleapis.com/css?family=Pacifico");
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic");
+// MIXINS - MEDIA QUERIES ///////////////////////////////////////////////////
+@mixin bp($point) {
+    @if $point==large {
+        @media (min-width: 1600px) {
+            // screens 1680px, 1920px
+            @content;
+        }
+    }
+    @else if $point==med {
+        @media (max-width: 1599px) {
+            // 1024px
+            @content;
+        }
+    }
+    @else if $point==little {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+    @else if $point==tiny {
+        @media (max-width: 480px) {
+            @content;
+        }
+    }
+}
+
+// MIXINGS - VENDOR PREFIXES ///////////////////////////////////////////////////////////////////////////
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+
+  #{$property}: $value;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+body {
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+// first block ///////////////////////////////////////////////////////////////////////////
+.first {
+    height: 100vh;
+    background: url("../img/first/first-bg.jpg") no-repeat;
+@include prefix(background-size, cover, ('webkit', 'moz', 'ms'));}
+
+.second {
+    height: 100vh;
+    background: url("../img/second-and-eight/sub-bg.png") no-repeat;
+    @extend .full-bg
+}
+
+.third {
+    height: 100vh;
+    background: url("../img/third/third-bg.jpg") no-repeat;
+    @extend .full-bg
+}
+
+.fourth {
+    height: 100vh;
+    background: url("../img/fourth/fourth-bg.jpg") no-repeat;
+    @extend .full-bg
+}
+
+.fifth {
+    height: 100vh;
+    background: url("../img/fifth/fifth-bg.jpg") no-repeat;
+    @extend .full-bg
+}
+
+.sixth {
+    height: 100vh;
+    background: url("../img/sixth/sixth-bg.jpg") no-repeat;
+    @extend .full-bg
+}
+
+.seventh {
+    height: 100vh;
+    background: url("../img/seventh/seventh-bg.jpg") no-repeat;
+    @extend .full-bg
+}
+
+.eight {
+    height: 100vh;
+    background: url("../img/second-and-eight/sub-bg.png") no-repeat;
+    @extend .full-bg
+}

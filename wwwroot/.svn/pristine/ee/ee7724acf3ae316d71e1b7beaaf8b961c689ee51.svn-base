@@ -1,0 +1,11 @@
+name = nhmrc special collection
+description = nhmrc special collection
+core = 7.x
+package = nhmrc
+version = 7.x-1.0
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = special_collection_audience
+features[views_view][] = special_collection_topics
+features_exclude[dependencies][ctools] = ctools

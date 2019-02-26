@@ -1,0 +1,20 @@
+<?php
+/**
+* Implementation of hook_form_alter()
+*/
+function login_form_modifications_form_alter(&$form, $form_state, $form_id) {
+ global $user;
+  
+  if($form_id == 'user_login') {
+   drupal_set_message(t("The Log In functionality is reserved for site content administrators only.  If you would like to receive e-mail updates, subscribe here."),$type = 'warning');
+  
+  }
+
+// clearing message if user is logged in
+if ( $user->uid ) {
+  drupal_get_messages('warning');
+  
+}
+  
+}
+?>

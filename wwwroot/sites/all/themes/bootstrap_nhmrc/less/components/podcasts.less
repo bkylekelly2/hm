@@ -1,0 +1,66 @@
+.podcast_icon{
+	content: '';
+	height:100px;
+	width: 100px;
+	background: url('../images/podcast.png');
+	float: left;
+	margin: 0 20px 10px 0;
+}
+
+//podcast page
+.tax-podcast{
+	.node-media{
+		margin-top: 20px;
+	}
+
+	.node-media:before{
+		.podcast_icon;
+	}
+	.field-name-field-transcript .field-label, .audio-download b{
+		font-family: 'Raleway', sans-serif;
+		font-weight: bold;
+	}
+	.field-name-field-audio{
+		padding-top: 10px;
+		clear: both;
+	}
+	.field-name-field-transcript .field-items{
+		width: 60%;
+	}
+}
+
+//podcast section of media gallery page
+.podcast-pane .view-content{
+	margin-bottom: 50px;
+	.views-row{
+		clear: both;
+		margin-bottom: 20px;
+	}
+	.views-field-title a:before{
+		.podcast_icon;
+	}
+}
+
+.able{
+	box-shadow: none;
+	max-width: 650px;
+}
+
+.able-player.able-audio {
+    border: 1px solid @black;
+}
+
+.able-status-bar {
+    background: @accent;
+}
+
+.able-controller.able-white-controls {
+    background: @primary;
+    padding-top: 5px;
+    margin-top: 0px;
+    border-top: 0;
+}
+
+.able-now-playing {
+    display: none;
+}

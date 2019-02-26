@@ -1,0 +1,46 @@
+.socialShare{
+	position: fixed;
+	background: #000;
+	background: rgba(0, 0, 0, 0.65);
+	left: -54px;
+	z-index: 1000;
+	bottom: 3%;
+	padding: 5px 0;
+	width: 54px;
+	@include transition-property(left);
+	@include transition-duration(.3s);
+	.addtoany-icons a{
+		margin: 5px 10px;
+		float: left;
+		clear: both;
+		padding: 0px !important;
+		&:focus span, &:hover span{
+			box-shadow: #ffffff 0px 0px 0px 2px;
+			border-radius: 4px;
+		}
+	}
+}
+
+.socialOpen{
+	position: absolute;
+	bottom: 0%;
+	margin-bottom: 20px;
+	right: -41px;
+	background: #000;
+	background: rgba(0, 0, 0, 0.65);
+	padding: 6px;
+	&:focus, &:hover{
+		outline: 1px solid #fff;
+	}
+}
+
+.open-social {
+	left: 0;
+	transition: left .3s;
+}
+
+.close-social {
+	left: -3%;
+	@include transition-property(left);
+	@include transition-duration(.3s);
+}

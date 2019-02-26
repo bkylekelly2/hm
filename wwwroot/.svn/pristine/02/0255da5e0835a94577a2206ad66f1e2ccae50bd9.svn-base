@@ -1,0 +1,114 @@
+//accordion styling
+.accordion{
+    overflow: hidden;
+    .panel-default {
+        border: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    .panel-heading{
+        background: @primary;
+        color:#fff;
+        padding: 0;
+        margin: 0;
+        height: 55px;
+        .panel-title{
+            color:#fff;
+        }
+        a{
+            color:#fff;
+            display: block;
+            font-weight: 400;
+            height:55px;
+            line-height: 55px;
+            &:hover{
+                text-decoration: none;
+            }
+            span.plus-minus::after{
+                content: " - ";
+                display: inline-block;
+                float: left;
+                font-size: 3em;
+                font-weight: 200;
+                height: 100%;
+                text-align: center;
+                width: 55px;
+            }
+            &.collapsed span.plus-minus::after{
+                content: " + ";
+            }
+        }
+
+        .words{
+            position: relative;
+            left: 20px;
+            display: inline-block;
+            line-height: 55px;
+            // if the body has the class "ios" then this will take effect
+            @media @small-and-down {
+                    // width: 80%;
+                   font-size: 10px;
+                    // top: -22px;
+                    // left: 0;
+                }
+            // .ios &{
+            //     top: -22px;
+            //      @media @small-and-down {
+            //         width: 80%;
+            //         font-size: 10px;
+            //         left: 0;
+            //     }
+            // }
+        }
+        .accordion-toggle{
+            padding: 0;
+        }
+    }
+    .panel-body{
+        background: darken(#fff, 10%);
+        overflow: hidden;
+        //.accordion-inner{
+        //    padding: 20px;
+        //}
+        p:first-child {
+            font-size: inherit;
+            line-height: inherit;
+        }
+        a{
+            color:lighten(@primary, 10%);
+        }
+    }
+    .moreAbout{
+        font-weight: bold;
+        float: right;
+        padding-bottom: 10px;
+        a{
+            color:@accent;
+        }
+    }
+}
+
+//Drag and drop ordering
+.acc-order-panel.panel-pane p {
+    font-size: 16px;
+}
+
+a.tabledrag-handle .handle{
+    height: 22px;
+    width: 22px;
+    margin-top: -14px;
+}
+
+.view-accordion .view-footer .view-content.accordion{
+    display: none;
+}
+.display-none {
+  display:none;
+}
+
+.accordion .accordion-toggle:focus{
+  background: darken(@primary, 5%);
+  outline: none;
+}
+

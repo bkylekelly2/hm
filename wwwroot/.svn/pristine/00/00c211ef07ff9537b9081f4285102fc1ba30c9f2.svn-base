@@ -1,0 +1,7 @@
+name = TLD bootstrap
+description = Provides utitlity functions and views plugins for bootstrap themes
+core = 7.x
+package = TLD
+
+files[] = tld_bootstrap_plugin_style_grid.inc
+files[] = tld_bootstrap.views.inc

@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = afemath@git.drupal.org:sandbox/afemath/2475577.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "7.x-1.x"]
+	remote = origin
+	merge = refs/heads/7.x-1.x

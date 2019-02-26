@@ -1,0 +1,39 @@
+.solid-page{
+	@media #{$small-and-down}{
+		font-size: 10px; //adjusts all fonts sizes for phone
+	}
+	p{
+		position: absolute;
+		width: 52%;
+		font-size: 3em;
+		font-weight: 700;
+		color: $white;
+		top: 10%;
+
+		span {
+			font-weight: 300;
+		}
+		@media #{$medium-only}{
+			//			font-size: 2.5em;
+		}
+		@media #{$small-and-down}{
+			font-size: 2.5em;
+			width: 70%;
+			left: 10%;
+		}
+	}
+
+}
+
+.relationship-story {
+	background: url("../img/general/solid-red-pattern.png") repeat;
+	z-index: 900;
+}
+
+.logo {
+	position: absolute;
+	bottom: 8%;
+	right: 10%;
+	height: 65vh;
+	max-height: 272px;
+}

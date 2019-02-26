@@ -1,0 +1,23 @@
+;$Id$
+
+name = Calendar Plus
+description = Converts the Calendar module output to responsive HTML/CSS
+package = Date/Time
+core = 7.x
+
+dependencies[] = views
+dependencies[] = date_api
+dependencies[] = date_views
+dependencies[] = calendar
+
+stylesheets[all][] = css/calendar_plus.css
+scripts[] = js/calendar_plus.js
+scripts[] = js/jquery.equalheights.js
+
+files[] = calendar_plus.module
+files[] = includes/calendar_plus.views.inc
+files[] = includes/calendar_plus_plugin_style.inc
+files[] = includes/calendar_plus_plugin_row.inc
+files[] = includes/calendar_plus.views_template.inc
+files[] = theme/theme.inc
+files[] = theme/calendar-style.tpl.php

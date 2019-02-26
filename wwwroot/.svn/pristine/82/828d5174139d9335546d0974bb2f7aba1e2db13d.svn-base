@@ -1,0 +1,55 @@
+//webforms
+.webform-client-form legend{
+  font-size: @baseFontSize;
+}
+
+//Survey Webform
+#webform-component-5e-manual-entry,
+#webform-component-5g-manual-entry,
+#webform-component-5b-manual-entry,
+#webform-component-5-how-did-you-hear-about-the-national-resource-center-for-healthy-marriage-and-families-check-all-that---5b-manual-entry,
+#webform-component-5-how-did-you-hear-about-the-national-resource-center-for-healthy-marriage-and-families-check-all-that---5e-manual-entry,
+#webform-component-5-how-did-you-hear-about-the-national-resource-center-for-healthy-marriage-and-families-check-all-that---5g-manual-entry,
+#webform-component-5-how-did-you-hear-about-the-national-resource-center-for-healthy-marriage-and-families-check-all-that-apply---5b-manual-entry,
+#webform-component-5-how-did-you-hear-about-the-national-resource-center-for-healthy-marriage-and-families-check-all-that-apply---5e-manual-entry,
+#webform-component-5-how-did-you-hear-about-the-national-resource-center-for-healthy-marriage-and-families-check-all-that-apply---5g-manual-entry{
+  label{display: none;}
+}
+
+.node-type-webform #webform-component-header-short {
+  display: none;
+}
+#webform-component-header-long {
+  display: none;
+}
+.node-type-webform #webform-component-header-long {
+  display: block;
+}
+
+//survey popup
+#footer_wrapper #block-webform-client-block-82{
+  display: none;
+}
+
+//survey popup
+//#webform-client-form-82 > div > .form-type-webform-grid > .control-label {
+//  font-size: 16px;
+//  font-weight: normal;
+//  font-stretch: normal;
+//}
+//#webform-client-form-82 > div > .form-type-webform-grid .webform-grid thead th {
+//  font-weight: normal;
+//  font-stretch: normal;
+//}
+#webform-client-form-82 > div > .webform-component-fieldset .webform-grid thead tr td:first-of-type {
+  border-bottom: 1px solid #ddd;
+}
+#webform-client-form-82 > div > .webform-component-fieldset .webform-grid thead tr th {
+  border-bottom: 1px solid #ddd;
+}
+#webform-client-form-82 > div > .webform-component-fieldset .webform-grid tbody tr .checkbox {
+  border-top: 2px solid #ddd \9;
+}
+#webform-client-form-82 .table.table-striped tbody > tr:nth-child(odd) > td {
+  background-color: rgba(0,0,0,0);
+}

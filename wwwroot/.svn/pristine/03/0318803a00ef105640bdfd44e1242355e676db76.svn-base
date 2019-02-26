@@ -1,0 +1,175 @@
+.responsive-calendar ul, 
+.responsive-calendar ul li {
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* Firefox */
+}
+
+.responsive-calendar ul {
+  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  clear: both;
+  width: 100% !important;
+}
+ 
+.responsive-calendar li {
+  
+  display: block;
+  float: left;
+  width: 14.35%;
+  padding: 5px;
+  
+  border: 1px solid #ccc;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+
+.responsive-calendar li li {
+
+  border: none;
+  width: auto;
+  padding: 0;
+}
+
+.responsive-calendar li .day, 
+.responsive-calendar li .month {
+    
+  display: none;
+}
+
+.responsive.calendar-calendar .month-view {
+
+  width: 30%;
+  float: left;
+  margin-right: 10px;
+}
+
+.responsive.calendar-calendar .month-view .mini .day,
+.responsive.calendar-calendar .month-view .mini .month {
+
+  display: none;
+}
+
+.responsive.calendar-calendar .month-view td,
+.responsive.calendar-calendar .month-view td.mini.empty {
+
+  border: none;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  text-align: center;
+}
+
+.responsive.calendar-calendar .month-view tbody {
+
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+}
+
+.feed-icon { 
+
+  clear: both;
+  margin: 30px 0;
+}
+
+.event-info {
+
+  display: block;
+  clear: both;
+}
+
+.event-time a, 
+.event-time a:hover {
+
+  font-weight: bold;
+  color: #000;
+}
+
+.event-title,
+.event-time a, 
+.event-time a:hover {
+
+  font-size: 11px;
+  line-height: 11px !important;
+}
+
+.calendar-day .date a {
+
+  font-weight: bold;
+  color: #4B85AC;
+}
+
+@media only screen and (max-width : 768px) {
+ 
+  .responsive-calendar .weekdays {
+     
+     display: none;
+  }
+
+  .responsive-calendar li {
+     
+     height: auto !important;
+     width: 100%;
+     border-top: 1px solid #ededed;
+     border-bottom: 1px solid #ededed;
+     padding: 10px;
+     margin-bottom: -1px;
+  }
+  
+  .responsive-calendar li li {
+     
+     padding: 0;
+  }
+  
+  .responsive-calendar li .day, 
+  .responsive-calendar li .month {
+    
+    display: inline;
+  }
+
+  .responsive-calendar li.out_of_range {
+    
+    display: none;
+  }
+  
+  .responsive.calendar-calendar .month-view {
+
+    width: auto;
+    float: none;
+    clear: both;
+    margin-right: none;
+  }
+  
+  .date-nav-wrapper .pager {
+  
+    padding-right: 10px !important;
+  }
+  
+  .date-nav div.date-heading {
+  
+    padding: 0 10px;
+  }
+  
+  .date-nav div.date-heading h3 {
+  
+    font-size: 1em;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width : 769px) {
+ 
+  .calendar-day .date {
+
+    float: right;
+    padding-right: 5px;
+  }
+  
+  .responsive-calendar li.calendar-day {
+  
+    min-height: 120px;
+    height: auto;
+  }
+}
+

@@ -1,0 +1,10 @@
+{
+    "name": "kyle/drush",
+    "require": {
+        "drush/drush": "v8"
+    },
+    "config": {
+        "bin-dir": "bin/"
+    }
+
+}

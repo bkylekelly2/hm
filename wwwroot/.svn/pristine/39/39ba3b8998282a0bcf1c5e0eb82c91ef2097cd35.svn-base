@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the nhmrc menu feature.
+ */
+
+include_once 'nhmrc_menu.features.inc';

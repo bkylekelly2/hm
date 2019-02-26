@@ -1,0 +1,489 @@
+/*Library Page */
+.page-library{
+
+    .pane-featured-documents{
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img{
+            padding-bottom: 20px;
+        }
+        .views-field-title {
+            font-size: 17px;
+            padding-bottom: 10px;
+        }
+    }
+
+    .panel-panel.right.col-lg-4{
+        .panel-pane{
+            .border-bottom;
+            &.last{
+                border-bottom:none;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+.views-widget-filter-type{
+    display: none;
+}
+.page-library-search-results, .page-healthy-dating-search-results {
+    .main-container {
+        > .row {
+            @media (max-width: 1199px) {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            > section.col-sm-12 {
+                padding: 0;
+                > div.col-sm-12 {
+                    padding: 0;
+                }
+            }
+            .library-search-content-bottom {
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: 30px;
+                border-top: 2px solid #eee;
+                .library-search-content-bottom-text {
+                    padding-left: 0;
+                }
+                p > a:visited {
+                    color: #fff;
+                }
+            }
+            .sc-content-bottom {
+                .btn {
+                    width: 100%;
+                }
+            }
+            .library-search-content-top {
+                border-bottom: 1px solid #eee;
+                margin-bottom: 10px;
+                padding: 0;
+                padding-bottom: 15px;
+                p {
+                    margin-bottom: 0;
+                    a {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        #block-views-exp-solr-library-search-page {
+            #views-exposed-form-solr-library-search-page {
+                .views-exposed-widgets {
+                    #edit-search-api-aggregation-2-wrapper {
+                        display: none;
+                    }
+                    #edit-search-api-aggregation-3-wrapper {
+                        display: none;
+                    }
+                    //#edit-search-api-views-fulltext-wrapper {
+                    //    display: none;
+                    //}
+                    .views-exposed-widget {
+                        margin-left: 0;
+                        padding: 1em 1em 1em 0;
+                        button {
+                            width: 100%;
+                            margin-top: 0;
+                            margin-right: 0;
+                        }
+                        input {
+                            border: 1px solid #555;
+                            border-radius: 0px;
+                        }
+                    }
+                    input, #library-search-switcher, button {
+                        height: 50px;
+                    }
+                    .select-list-library-search-switcher {
+                        padding: 1em 1em 1em 0;
+                        #library-search-switcher {
+                            width:100%;
+                            border: 1px solid #555;
+                            border-radius: 0px;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            background-position: right 50%;
+                            background-repeat: no-repeat;
+                            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
+                            padding: .5em;
+                            padding-right: 1.5em
+                    }
+                    }
+                    .views-submit-button{
+                        padding-right: 0;
+                    }
+                    .views-reset-button {
+                        float: right;
+                        padding-right: 0;
+                    }
+                    #select-results-per-page {
+                        display:none;
+                    }
+                }
+            }
+        }
+        #block-views-exp-solr-library-search-page-2 {
+            #views-exposed-form-solr-library-search-page-2 {
+                .views-exposed-widgets {
+                    #edit-search-api-aggregation-2-wrapper {
+                        display: none;
+                    }
+                    #edit-search-api-aggregation-3-wrapper {
+                        display: none;
+                    }
+                    //#edit-search-api-views-fulltext-wrapper {
+                    //    display: none;
+                    //}
+                    .views-exposed-widget {
+                        margin-left: 0;
+                        padding: 1em 1em 1em 0;
+                        button {
+                            width: 100%;
+                            margin-top: 0;
+                            margin-right: 0;
+                        }
+                        input {
+                            border: 1px solid #555;
+                            border-radius: 0px;
+                        }
+                    }
+                    input, #library-search-switcher, button {
+                        height: 50px;
+                    }
+                    .select-list-library-search-switcher {
+                        padding: 1em 1em 1em 0;
+                        #library-search-switcher {
+                            width:100%;
+                            border: 1px solid #555;
+                            border-radius: 0px;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            background-position: right 50%;
+                            background-repeat: no-repeat;
+                            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
+                            padding: .5em;
+                            padding-right: 1.5em
+                        }
+                    }
+                    .views-submit-button,{
+                        padding-right: 0;
+                    }
+                    .views-reset-button {
+                        float: right;
+                        padding-right: 0;
+                    }
+                    #select-results-per-page {
+                        display:none;
+                    }
+                }
+            }
+        }
+        .view-header {
+            float: left;
+            display:table;
+            height: 50px;
+            .view-results {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+        #block-boxes-static-select-results-per-page {
+            display: grid;
+            margin-right: 25px;
+            z-index: 1;
+            .boxes-box-content {
+                > select#static-select-results-per-page {
+                    height: 50px;
+                    border: 1px solid #555;
+                    border-radius: 0px;
+                    background-color: white;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    background-position: right 50%;
+                    background-repeat: no-repeat;
+                    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
+                    padding: .5em;
+                    padding-right: 1.5em;
+                }
+            }
+        }
+        #block-search-api-sorts-search-sorts {
+            display: table;
+            .block-title {
+                display: table-cell;
+                font-weight: normal;
+                text-transform: none;
+                vertical-align: middle;
+            }
+            ul.search-api-sorts {
+                height: 50px;
+                /*border: 1px solid #555;
+                border-radius: 0px;*/
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background-position: right 50%;
+                background-repeat: no-repeat;
+                /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);*/
+                padding: .5em;
+                padding-right: 1.5em;
+                li {
+                    list-style-type: none;
+                    img {
+                        display: inline-block;
+                        /*float: right;*/
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        .view-solr-library-search {
+            .views-row {
+                border-bottom: 1px solid #eee;
+                padding: 1.5em 0.5em;
+                a {
+                    font-weight: bold;
+                }
+                .views-field-field-resource-abstract {
+                    p {
+                        margin-left: 0px !important;
+                    }
+                }
+            }
+        }
+        #region-library-search-content {
+            float: right;
+            padding-right: 0;
+            #block-search-api-sorts-search-sorts {
+                z-index: 1;
+                #search-api-sorts-widget-form {
+                    .form-item-sort-by > select {
+                        height: 50px;
+                        border: 1px solid #555;
+                        border-radius: 0px;
+                        background-color: white;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        background-position: right 50%;
+                        background-repeat: no-repeat;
+                        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
+                        padding: .5em;
+                        padding-right: 1.5em;
+                        option {
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            #block-current-search-library-search-block {
+                .current-search-item-active {
+                    ul {
+                        li {
+                            display: inline-block;
+                            background-color: #e6e6e6;
+                            padding: 7px 12px;
+                            border-radius: 10px;
+                            margin-right: 10px;
+                            margin-bottom: 10px;
+                            margin-top: 10px;
+                            a {
+                                float: right;
+                                margin-left: 10px;
+                                text-decoration: none;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #region-library-search-facet {
+            float: left;
+            padding: 0;
+            .region-facet {
+                > #block-boxes-facet-collapse-all {
+                    .facet-collapse-all-pane {
+                        h2 {
+                            margin-bottom: 0;
+                            position: relative;
+                            vertical-align: middle;
+                            width: 100%;
+                            font-size: 15px;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                            span {}
+                        }
+                    }
+                }
+                > .block-facetapi {
+                    background-color: #e6e6e6;                    
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    .block-title {                        
+                        background: #e6e6e6 url(/sites/all/themes/bootstrap_nhmrc/images/library-facet-icon.png) no-repeat left center;
+                        background-size: 33px 33px !important;
+                        color: #1b6270;
+                        margin-bottom: 0;
+                        padding: 10px 0 10px 40px;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                        span.facet-title {
+                            display:table-cell;
+                            padding-left:15px;
+                            padding-right: 5px;
+                            vertical-align: middle;
+                            width: 90%
+                        }
+                        span.facet-toggle {
+                            display:table-cell;
+                            font-size: 3em;
+                            font-weight: 100;
+                            text-align: right;
+                            vertical-align: middle;
+                            width: 10%;
+                        }
+                    }
+                    > ul {
+                        padding-left: 0;
+                        > li {
+                            margin: 1em 0;
+                            .facetapi-checkbox {
+                                margin: 4px 8px 4px 4px;
+                                -ms-transform: scale(1.5); /* IE */
+                                -moz-transform: scale(1.5); /* FF */
+                                -webkit-transform: scale(1.5); /* Safari and Chrome */
+                                -o-transform: scale(1.5); /* Opera */
+                            }
+                            a {
+                                text-decoration: none;
+                                text-transform: capitalize;
+                                -ms-transform: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Main Search Page*/
+.page-search {
+    .view-display-id-page_1 {
+        .view-header {
+            #block-views-exp-solr-library-search-page-1 {
+                #views-exposed-form-solr-library-search-page-1 {
+                    .views-exposed-widgets {
+                        .views-exposed-widget {
+                            padding: 1em 0.5em 1em 0;
+                            button {
+                                width: 100%;
+                                margin-top: 0;
+                                margin-right: 0;
+                            }
+                            input {
+                                border: 1px solid #555;
+                                border-radius: 0px;
+                            }
+                        }
+                        input, button {
+                            height: 50px;
+                        }
+                        .views-submit-button {
+                            float: right;
+                        }
+                    }
+                }
+            }
+            #filter-type {
+                padding: 1em 0.5em 1em 0;
+                .form-item {
+                    padding-left: 0;
+                }                   
+                label, button {  
+                    display: table;
+                    height: 50px;                      
+                    margin-top: 0;
+                    margin-right: 0;
+                    width: 100%;
+                    span {
+                        display: table-cell;
+                        vertical-align: middle;
+                        input {
+                            float: right;
+                        }
+                        @-moz-document url-prefix() {
+                            input {
+                                margin-top: -16px;
+                            }
+                        }
+                    }
+                }
+                .adv-lib {
+                    background-color: @white;
+                    display: table;
+                    height: 50px;
+                    margin-top: 0;
+                    margin-right: 0;
+                    width: 100%;
+                    line-height: 35px;
+                }
+            }
+            > p {
+                > a {
+                    margin-right: 15px;
+                    height: 44px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .view-content {
+            margin-top: 70px;
+            .views-row {
+                border-bottom: 1px solid #eee;
+                padding: 1.5em 0.5em;
+                min-height: 100px;
+                a {
+                    font-weight: bold;
+                }
+                > .views-field-type {
+                    position: absolute;
+                    .accordion_item, .advisory_panel_members, .archived_webinars, .article, .page, .event, .featured_documents, .media, .panel {
+                        background: url(/sites/all/themes/bootstrap_nhmrc/images/web-results-icon.png) no-repeat;
+                    }
+                    .distributor, .resource {
+                        background: url(/sites/all/themes/bootstrap_nhmrc/images/library-results-icon.png) no-repeat;
+                    }
+                    .search-result-type-icon {
+                        height: 73px;
+                        width: 51px;
+                    }
+                }
+                .views-field-field-resource-primary-title, .views-field-field-resource-abstract {
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+}
+
+.page-healthy-dating-search-results {
+    #region-library-search-content {
+        .view-content {
+            .field-content {
+                p.first-p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

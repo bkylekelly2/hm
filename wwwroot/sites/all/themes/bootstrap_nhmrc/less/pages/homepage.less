@@ -1,0 +1,547 @@
+//*****Home (Front)
+@home-icon-position: 10px 12px;
+.page-home {
+    .panel-panel.left.col-sm-7 {
+        padding-left: 15px;
+    }
+    .panel-panel.top .panel-pane.last {
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+}
+
+.pane-boxes-home3icons{
+    text-align: center;
+   //.separator-bottom;
+    img{
+        margin-bottom: 20px;
+        padding-left: 2%;
+    }
+    h3{
+        //text-transform: uppercase;
+        margin: 5px 0 5px 0;
+        padding: 0;
+        text-align: left;
+        text-transform: none;
+    }
+    p{
+        color:#043246;
+        font-size: 1.1em;
+        line-height: 1.1em;
+        text-align: left;
+    }
+    a{
+        display: block;
+        //padding: 20px 0 2px;
+    }
+    a:hover{
+        text-decoration: none;
+        cursor: pointer;
+        background: lighten(@accent2, 45%);
+    }
+    a:focus{
+        text-decoration: none;
+        background: lighten(@accent2, 45%);
+    }
+
+    #boxes-box-home3icons {
+        margin-top: 36px;
+        .row {
+            margin-right: 0;
+            margin-left: 0;
+            .col-sm-6 {
+                margin-left: 0;
+                margin-bottom: 40px;
+                &.left {
+                    padding-right: 10px;
+                }
+                &.right {
+                    float: right;
+                    padding-left: 10px;
+                }
+                a {
+                    background-color: #F1F5F9;
+                    padding: 20px 0 2px;
+                }
+                @media @small-and-down{
+                    overflow: hidden;
+                }
+                img {
+                    @media @small-and-down{
+                        max-width: 22.9%;
+                        float: left;
+                    }
+                }
+                div.col-sm-9 {
+                    @media @small-and-down{
+                        max-width: 74.3%;
+                        float: right;
+                    }
+                }
+            }
+            .col-sm-12:hover {
+                background-color: #9F212A;
+                h3 {
+                    color: #fff;
+                }
+                p {
+                    color: #fff;
+                }
+            }
+            .col-sm-12:focus {
+                background-color: #9F212A;
+                h3 {
+                    color: #fff;
+                }
+                p {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+//bottom left area
+.pane-home-calendar {
+    margin-left: 0 !important;
+    background: url("/sites/all/themes/bootstrap_nhmrc/images/calendar-of-events-icon.png") @home-icon-position no-repeat;
+    background-position: @home-icon-position;
+    overflow: hidden;
+    .view-content {
+        ul {
+            padding: 5px 25px;
+            @media @small-and-down {
+                width: 100%;
+            }
+            li.views-row {
+                margin: 0 0 0 0;
+                padding: 0 5px 15px 5px;
+                clear: none;
+                //height: 130px;
+                @media @small-and-down {
+                    padding: 0 15px 15px 5px;
+                }
+                > div.views-field-title {
+                    background-color: #fff;
+                    height: 116px;
+                    padding: 10px 7px 7px 10px;
+                    a {
+                        text-decoration: none;
+                    }
+                    .calendar-content-date {
+                        font-size: 1.1em;
+                        font-weight: 700;
+                    }
+                }
+                > div.views-field-title:hover {
+                    background-color: #9F212A;
+                    .calendar-content-date {
+                        color: #fff;
+                    }
+                    .calendar-content-title {
+                        color: #fff;
+                    }
+                }
+                > div.views-field-title:focus {
+                    background-color: #9F212A;
+                    .calendar-content-date {
+                        color: #fff;
+                    }
+                    .calendar-content-title {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .view-empty {
+        ul {
+            li {
+                padding-right: 40px;
+                div.calendar-content-title {
+                    background-color: #fff;
+                    height: 116px;
+                    padding: 10px 10px 7px 10px;
+                    a {
+                        background-color: #fff;
+                        height: 116px;
+                        color: #1A545B;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pane-twitter-feed {
+    background: url("/sites/all/themes/bootstrap_nhmrc/images/twiiter-icon.png") @home-icon-position no-repeat;
+    background-position: @home-icon-position;
+    border-bottom: 0 !important;
+    float: right;
+    .view-content {
+        ul {
+            padding: 2px 25px;
+            li.views-row {
+                background-color: #fff;
+                margin: 15px 15px 15px 15px;
+                padding: 10px 10px 10px 50px;
+            }
+        }
+    }
+    .view-footer {
+        padding-bottom: 20px;
+        padding-left: 35px;
+    }
+}
+
+.front .pane-twitter-feed {
+    @media @small-and-down {
+        display:none !important;
+    }
+}
+
+.pane-boxes-mobile-twitter {
+    border-bottom: 0;
+    text-align: center;
+    @media @medium-and-up {
+        display:none;
+    }
+    #mobile-twitter {
+        .mobile-twitter-btn {
+            font-size: 1.2em;
+            font-weight: 600;
+            font-family: 'Lato';
+        }
+    }
+}
+
+.pane-boxes-mobile-twitter,
+.pane-home-calendar,
+.pane-twitter-feed{
+    background-color: #F1F5F9;
+    padding-bottom: 1px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    h2.pane-title {
+        margin-left: 70px !important;
+        margin: 0 0 25px;
+        a {
+            text-decoration: none;
+            text-transform: none;
+        }
+    }
+    .view-content {
+        ul {
+            li.views-row {
+                //background-color: #fff;
+            }
+        }
+    }
+    //.border-bottom;
+}
+
+//featured Documents
+
+.pane-featured-documents{
+    background-color: #F1F5F9 !important;
+    background: url("/sites/all/themes/bootstrap_nhmrc/images/library-icon.png") @home-icon-position no-repeat;
+    background-position: @home-icon-position;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    h2.pane-title{
+        margin-left: 70px;
+        text-decoration: none;
+    }
+
+    //h2.pane-title {
+    //    margin-left: 70px;
+    //    a {
+    //        text-decoration: none;
+    //    }
+    //}
+    .view-featured-documents {
+        .item-list {
+            ul {
+                padding: 0 20px;
+                li.views-row a{
+                    background-color: #fff;
+                    display: block;
+                    margin: 0 15px 15px -20px;
+                    background-position: 10px 12px;
+                    padding: 8px 5px 12px 48px;
+                    //div.views-field-title {
+                        min-height: 56px;
+                    //}
+                    &:hover, &:focus {
+                        background-color: #9f212a;
+                        color: #ffffff;
+                    }
+                }
+
+            }
+        }
+        .view-footer {
+            padding-bottom: 20px;
+            padding-left: 35px;
+        }
+    }
+}
+
+.view-featured-documents-home{
+    .icon-item-list();
+    @media @medium-and-down{
+    }
+    li{
+        color:#333333;
+        &.pdf a{background: url('../images/icon-pdf.png') no-repeat;}
+        &.doc a{background: url('../images/icon-doc.png') no-repeat;}
+        &.other a{background: url('../images/icon-other.png') no-repeat;}
+    }
+    //a{color:#333333}
+}
+
+//Calendar List
+.pane-home-calendar{
+    .icon-item-list();
+    li a{
+        color:#333333;
+        //background: url('../images/icon-calendar.png') no-repeat;
+    }
+    //a{color:#333333;}
+}
+
+// Making a Difference
+#homePanel .pane-making-a-difference-promo {
+    .views-field-title, .title{
+        color: @mywhite;
+        background-color: @myred;
+        text-align: center;
+        padding: 8px 20px;
+        position: inherit;
+    }
+    .pane-title {
+        a {
+            text-decoration: none;
+        }
+    }
+    h3 {
+        a {
+            text-decoration: none;
+            text-transform: none;
+        }
+    }
+    h4{
+        font-size: 19px;
+        line-height: 1.2em;
+        font-weight: normal;
+        a{
+            text-decoration: none;
+            color: @mywhite;
+            &:hover{
+                text-decoration: underline;
+            }
+            &:focus{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.pane-making-a-difference-promo{
+    .separator-bottom;
+
+}
+
+// Media/Video
+#homePanel .pane-media {
+    background: url("/sites/all/themes/bootstrap_nhmrc/images/media-gallery-icon.png") @home-icon-position no-repeat;
+    background-color: #F1F5F9 !important;
+    background-position: @home-icon-position;
+    padding-top: 25px;
+    .pane-title {
+        margin-left: 70px;
+    }
+    .pane-content {
+        margin: 0px 20px 20px 15px;
+    }
+    .views-field-title, .title{
+        color: @accent;
+        background-color: #F1F5F9;
+        text-align: left;
+        padding: 8px 20px 0 5px;
+    }
+    h4{
+        a{
+            color: @accent;
+            font-weight: 600;
+        }
+    }
+}
+
+
+.view-media.view-display-id-block_1 {
+    .views-field-field-youtube {
+        padding: 0 40px;
+    }
+    .video-desc{
+        //background-color: #F1F5F9;
+        // color: #000;
+        padding: 5px 5px 20px 5px;
+        //font-size: 1.1em;
+    }
+}
+
+.carousel-inner {
+    border-bottom: 18px solid @myred;
+    a {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.home-bg-area {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-bottom: 18px solid @myred;
+    overflow: hidden;
+    max-height: 100vh;
+    min-height: 400px;
+    @media @large-and-up{
+        //overflow: hidden;
+        //max-height: 1000px;
+    }
+    .boxes-box-content {
+        //border-bottom: 18px solid @myred;
+        a {
+            img {
+                width: 100%;
+            }
+        }
+        .home-bg-img {
+            overflow: hidden;
+            > img {
+                width: 100%;
+                background-size: cover;
+                min-width: 1300px;
+                min-height: 750px;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%,0)
+            }
+        }
+    }
+}
+
+.home-bg-text {
+    //text-align: center;
+    .first-h3 {
+        z-index: -1;
+        left: 10% !important;
+        position: absolute;
+        color: #fff;
+        width: 50%;
+        font-family: 'Lato';
+        font-weight: 300;
+        font-size: 2.5em;
+        @media @large-and-down{
+            font-size: 2.2em;
+        }
+        @media @medium-and-down{
+            font-size: 1.8em;
+        }
+        @media @small-and-down{
+            font-size: 1.4em;
+            width:85%;
+        }
+        @media @x-small-only{
+            font-size: 5vw;
+            width:85%;
+        }
+        span {
+            display: block;
+            text-transform: none;
+        }
+        span::first-letter {
+            //text-transform: capitalize;
+        }
+    }
+    .next-arrow {
+        position: absolute;
+        left: 50%;
+        margin-left: -33px;
+        width: 66px;
+        text-align: center;
+        z-index: 1000;
+    }
+    .btn-about {
+        left: 10% !important;
+        position: absolute;
+        width: 70%;
+        .btn-lg {
+            background-color: @myred;
+            border: 1px solid @myred;
+            padding: 11px 60px;
+        }
+    }
+}
+
+.home-uni-title h2, h3 {
+    text-transform: capitalize;
+    font-size: 1.4em;
+    font-family: 'Lato';
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#homePanel .featured-webinar {
+    margin-left: 0;
+    padding-right: 10px;
+    .title{
+        color: @mywhite;
+        background-color: @myred;
+        text-align: center;
+        padding: 8px 20px;
+        position: inherit;
+    }
+    .pane-title {
+        a {
+            text-decoration: none;
+        }
+    }
+    h3 {
+        a {
+            text-decoration: none;
+            text-transform: none;
+        }
+    }
+    h4{
+        font-size: 19px;
+        line-height: 1.2em;
+        font-weight: normal;
+        a{
+            text-decoration: none;
+            color: @mywhite;
+            &:hover{
+                text-decoration: underline;
+            }
+            &:focus{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Leave this here for when the calendar is moved to the top row for featured events/webinars/collections
+.panel-panel.top .pane-home-calendar {
+    margin-top: 36px;
+    padding-left: 10px;
+}

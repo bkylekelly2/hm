@@ -1,0 +1,63 @@
+//*****sidebar
+.panel-panel.right.span4{
+    h2.pane-title{
+        margin: 0 0 25px;
+        //margin: 0 0 10px 0;
+    }
+}
+
+// Most Popular
+.pane-mostpopular-1{
+    @media @large-and-up{
+        margin: 10px 0 10px 0;
+    }
+}
+.arrow-list, .pane-mostpopular-1{
+    ul{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    li{
+        padding-left: 13px;
+        list-style: none;
+        background: url('../images/arrow-list.png') left 6px no-repeat;
+        line-height: 1.7em;
+    }
+}
+.pane-mostpopular-1 a{
+    color: @primary;
+}
+
+.mostpopular--services {
+    display:none;
+}
+.mostpopular--intervals {
+    display:none;
+}
+
+//Survey Button
+.survey_btn {
+    margin-top: 20px;
+    text-align:center;
+    a{
+        text-decoration:none;
+        color:@accent;
+        display: block;
+        font-size: 20px;
+    }
+    .circle{
+        border-radius: 30px;
+        background-color: @primary;
+        display: inline-block;
+        &:hover{
+            background-color: lighten(@primary, 3%);
+        }
+        &:active{
+            background-color: darken(@primary, 3%);
+        }
+    }
+    img{
+        padding: 40px;
+        max-width: 170px;
+    }
+}

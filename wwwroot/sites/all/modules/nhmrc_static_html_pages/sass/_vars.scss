@@ -1,0 +1,45 @@
+// COLOR SWATCHES
+$white: #FFFFFF;
+$black: #000000;
+$red: #D22424;
+$green: #155865;
+$grey-dark: #595959;
+$grey-medium: #939393;
+$grey-light: #e3e3e3e;
+
+
+//Typeographey
+$base-font-family: 'Raleway', sans-serif;
+$base-font-size: 14px;
+// MEDIA QUERIES
+
+$x-small-only: 		"(max-width: 500px)";
+
+$small-and-down:  	"(max-width: 767px)";
+$small-only:  		"(min-width: 501px) and (max-width: 767px)";
+$small-and-up: 		"(min-width: 501px)";
+
+$medium-and-small:  "(min-width: 501px) and (max-width: 979px)";
+
+$medium-and-down: 	"(max-width: 979px)";
+$medium-only: 		"(min-width: 768px) and (max-width: 979px)";
+$medium-and-up: 	"(min-width: 768px)";
+
+$large-and-down:  	"(max-width: 1199px)";
+$large-only:  		"(min-width: 980px) and (max-width: 1199px)";
+$large-and-up: 		"(min-width: 980px)";
+
+$x-large-only:    	"(min-width: 1200px)";
+
+$tall-aspect-ratio-only: "(min-device-aspect-ratio: 8/16)";
+
+$taller-phones: screen and #{$small-and-down} and #{$tall-aspect-ratio-only};
+
+// to use -> @media #{$medium-and-down}{}
+
+
+/*------- Popover (tooltips) -------*/
+
+$pop-bg: #323232;
+$pop-border-color: $grey-dark;
+$pop-color: $white;

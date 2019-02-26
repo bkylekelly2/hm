@@ -1,0 +1,56 @@
+/* Popover (tooltips)*/
+
+.popover {
+	width: 200px;
+	z-index: 9999;
+	max-width: 300px;
+	color: $pop-color;
+	line-height: 1.4em;
+	background-color: $pop-bg;
+	border: 1px solid $pop-border-color;
+	@media #{$small-and-down}{
+		font-size: 12px;
+	}
+}
+
+.popover-title {
+	margin: 0;
+	padding: 8px 14px;
+	color: #fff;
+	font-size: 14px;
+	background-color: rgba(0, 0, 0, 4);
+	border-bottom: 1px solid #ebebeb;
+	border-radius: 5px 5px 0 0;
+}
+
+.popover.top {
+	margin-top: 0;
+	margin-left: 0;
+}
+
+.popover.top>.arrow {
+	border-top-color: $pop-border-color;
+}
+.popover.top > .arrow:after {
+	border-top-color: $pop-bg;
+}
+.popover.right>.arrow{
+	border-right-color: $pop-border-color;
+}
+.popover.right>.arrow:after {
+	border-right-color: $pop-bg;
+}
+.popover.bottom>.arrow{
+	border-bottom-color: $pop-border-color;
+}
+.popover.bottom>.arrow:after {
+	border-bottom-color: $pop-bg;
+
+}
+.popover.left>.arrow{
+	border-left-color: $pop-border-color;
+}
+.popover.left>.arrow:after {
+	border-left-color: $pop-bg;
+
+}
